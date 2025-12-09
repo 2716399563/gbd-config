@@ -10,10 +10,9 @@
   "blacklist": {
     "enabled": true,
     "machineIds": [
-      "DEMO-0001",
-      "AE60-81BC"
+      "DEMO-0001"
     ],
-    "message": "鎺堟潈宸茶繃鏈燂紒\n\n璇疯仈绯荤鐞嗗憳灏忛粍瀛﹂暱閲嶆柊鎺堟潈銆俓n鏈哄櫒鐮? "
+    "message": "Machine code has been blocked!\n\nPlease contact admin for reauthorization.\nMachine code: "
   },
   "whitelist": {
     "enabled": false,
@@ -46,8 +45,8 @@
     "AE6081BC": {
       "machineCode": "AE60-81BC",
       "firstLoginTime": "2025-12-10T01:44:54.831Z",
-      "lastLoginTime": "2025-12-10T01:53:30.808Z",
-      "loginCount": 11
+      "lastLoginTime": "2025-12-10T01:45:47.881Z",
+      "loginCount": 3
     }
   }
 }
