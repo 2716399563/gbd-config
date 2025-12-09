@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2024-12-09",
+  "lastUpdate": "2025-12-10",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -36,5 +36,12 @@
     "message": "系统维护中，请稍后再试...",
     "allowedMachines": []
   },
-  "usageRecords": {}
+  "usageRecords": {
+    "AE6081BC": {
+      "machineCode": "AE60-81BC",
+      "firstLoginTime": "2025-12-10T00:52:18.260Z",
+      "lastLoginTime": "2025-12-10T00:52:18.260Z",
+      "loginCount": 1
+    }
+  }
 }
