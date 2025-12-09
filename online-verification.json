@@ -1,52 +1,52 @@
 {
-  "version": "1.0.0",
-  "lastUpdate": "2025-12-10",
-  "config": {
-    "enabled": true,
-    "offlineMode": false,
-    "allowOfflineFallback": true,
-    "maxCacheAge": 86400000
-  },
-  "blacklist": {
-    "enabled": true,
-    "machineIds": [
-      "AE60-81BC"
-    ],
-    "message": "Machine code has been blocked!\n\nPlease contact admin for reauthorization.\nMachine code: "
-  },
-  "whitelist": {
-    "enabled": false,
-    "machineIds": [
-      "VIP1-0001"
-    ],
-    "benefits": {
-      "bypassTimeCheck": false,
-      "extendedExpiry": false
-    }
-  },
-  "announcement": {
-    "enabled": false,
-    "title": "System Announcement",
-    "message": "Welcome to GBD Analysis System!",
-    "type": "info"
-  },
-  "maintenance": {
-    "enabled": false,
-    "message": "System under maintenance...",
-    "allowedMachines": []
-  },
-  "usageRecords": {
-    "12345678": {
-      "machineCode": "1234-5678",
-      "firstLoginTime": "2025-12-10T00:51:03.118Z",
-      "lastLoginTime": "2025-12-10T00:51:03.118Z",
-      "loginCount": 1
-    },
-    "AE6081BC": {
-      "machineCode": "AE60-81BC",
-      "firstLoginTime": "2025-12-10T01:44:54.831Z",
-      "lastLoginTime": "2025-12-10T02:20:35.472Z",
-      "loginCount": 8
-    }
-  }
+    "version":  "1.0.0",
+    "lastUpdate":  "2025-12-10",
+    "config":  {
+                   "enabled":  true,
+                   "offlineMode":  false,
+                   "allowOfflineFallback":  true,
+                   "maxCacheAge":  86400000
+               },
+    "blacklist":  {
+                      "enabled":  true,
+                      "machineIds":  null,
+                      "message":  "Machine code has been blocked!\n\nPlease contact admin for reauthorization.\nMachine code: "
+                  },
+    "whitelist":  {
+                      "enabled":  false,
+                      "machineIds":  [
+                                         "VIP1-0001"
+                                     ],
+                      "benefits":  {
+                                       "bypassTimeCheck":  false,
+                                       "extendedExpiry":  false
+                                   }
+                  },
+    "announcement":  {
+                         "enabled":  false,
+                         "title":  "System Announcement",
+                         "message":  "Welcome to GBD Analysis System!",
+                         "type":  "info"
+                     },
+    "maintenance":  {
+                        "enabled":  false,
+                        "message":  "System under maintenance...",
+                        "allowedMachines":  [
+
+                                            ]
+                    },
+    "usageRecords":  {
+                         "12345678":  {
+                                          "machineCode":  "1234-5678",
+                                          "firstLoginTime":  "2025-12-10T00:51:03.118Z",
+                                          "lastLoginTime":  "2025-12-10T00:51:03.118Z",
+                                          "loginCount":  1
+                                      },
+                         "AE6081BC":  {
+                                          "machineCode":  "AE60-81BC",
+                                          "firstLoginTime":  "2025-12-10T01:44:54.831Z",
+                                          "lastLoginTime":  "2025-12-10T02:20:35.472Z",
+                                          "loginCount":  8
+                                      }
+                     }
 }
