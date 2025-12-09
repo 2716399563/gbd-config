@@ -10,7 +10,8 @@
   "blacklist": {
     "enabled": true,
     "machineIds": [
-      "DEMO-0001"
+      "DEMO-0001",
+      "AE60-81BC"
     ],
     "message": "鎺堟潈宸茶繃鏈燂紒\n\n璇疯仈绯荤鐞嗗憳灏忛粍瀛﹂暱閲嶆柊鎺堟潈銆俓n鏈哄櫒鐮? "
   },
