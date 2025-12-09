@@ -13,7 +13,7 @@
       "DEMO-0001",
       "TEST-1234"
     ],
-    "message": "此机器码已被封禁！\n请联系管理员小黄学长了解详情。"
+    "message": "Machine code has been blocked!"
   },
   "whitelist": {
     "enabled": false,
@@ -27,20 +27,20 @@
   },
   "announcement": {
     "enabled": false,
-    "title": "系统公告",
-    "message": "欢迎使用 GBD 分析系统！",
+    "title": "System Announcement",
+    "message": "Welcome to GBD Analysis System!",
     "type": "info"
   },
   "maintenance": {
     "enabled": false,
-    "message": "系统维护中，请稍后再试...",
+    "message": "System under maintenance...",
     "allowedMachines": []
   },
   "usageRecords": {
-    "AE6081BC": {
-      "machineCode": "AE60-81BC",
-      "firstLoginTime": "2025-12-10T00:52:18.260Z",
-      "lastLoginTime": "2025-12-10T00:52:18.260Z",
+    "12345678": {
+      "machineCode": "1234-5678",
+      "firstLoginTime": "2025-12-10T00:51:03.118Z",
+      "lastLoginTime": "2025-12-10T00:51:03.118Z",
       "loginCount": 1
     }
   }
