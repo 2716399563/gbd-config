@@ -9,7 +9,9 @@
   },
   "blacklist": {
     "enabled": true,
-    "machineIds": null,
+    "machineIds": [
+      "AE60-81BC"
+    ],
     "message": "Machine code has been blocked!\n\nPlease contact admin for reauthorization.\nMachine code: "
   },
   "whitelist": {
