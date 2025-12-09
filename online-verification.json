@@ -11,8 +11,7 @@
     "enabled": true,
     "machineIds": [
       "DEMO-0001",
-      "TEST-1234",
-      "AE60-81BC"
+      "TEST-1234"
     ],
     "message": "Machine code has been blocked!"
   },
