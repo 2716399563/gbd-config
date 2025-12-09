@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "lastUpdate": "2024-12-09",
+  "config": {
+    "enabled": true,
+    "offlineMode": false,
+    "allowOfflineFallback": true,
+    "maxCacheAge": 86400000
+  },
+  "blacklist": {
+    "enabled": true,
+    "machineIds": [
+      "DEMO-0001",
+      "TEST-1234"
+    ],
+    "message": "此机器码已被封禁！\n请联系管理员小黄学长了解详情。"
+  },
+  "whitelist": {
+    "enabled": false,
+    "machineIds": [
+      "VIP1-0001"
+    ],
+    "benefits": {
+      "bypassTimeCheck": false,
+      "extendedExpiry": false
+    }
+  },
+  "announcement": {
+    "enabled": false,
+    "title": "系统公告",
+    "message": "欢迎使用 GBD 分析系统！",
+    "type": "info"
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "系统维护中，请稍后再试...",
+    "allowedMachines": []
+  },
+  "usageRecords": {}
+}
