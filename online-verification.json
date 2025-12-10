@@ -105,6 +105,12 @@
       "firstLoginTime": "2025-12-10T20:39:55.651Z",
       "lastLoginTime": "2025-12-10T20:39:55.651Z",
       "loginCount": 1
+    },
+    "225838EC": {
+      "machineCode": "2258-38EC",
+      "firstLoginTime": "2025-12-10T20:49:56.496Z",
+      "lastLoginTime": "2025-12-10T20:49:56.496Z",
+      "loginCount": 1
     }
   }
 }
