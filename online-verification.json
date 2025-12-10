@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-10",
+  "lastUpdate": "2025-12-11",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -97,8 +97,8 @@
     "6E2B25EB": {
       "machineCode": "6E2B-25EB",
       "firstLoginTime": "2025-12-10T20:27:53.926Z",
-      "lastLoginTime": "2025-12-10T20:27:53.926Z",
-      "loginCount": 1
+      "lastLoginTime": "2025-12-11T01:00:15.585Z",
+      "loginCount": 2
     },
     "96243BE8": {
       "machineCode": "9624-3BE8",
