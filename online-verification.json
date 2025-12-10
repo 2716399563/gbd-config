@@ -117,6 +117,12 @@
       "firstLoginTime": "2025-12-10T21:07:27.288Z",
       "lastLoginTime": "2025-12-10T21:07:27.288Z",
       "loginCount": 1
+    },
+    "26DD0772": {
+      "machineCode": "26DD-0772",
+      "firstLoginTime": "2025-12-10T21:27:58.553Z",
+      "lastLoginTime": "2025-12-10T21:27:58.553Z",
+      "loginCount": 1
     }
   }
 }
