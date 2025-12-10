@@ -47,6 +47,12 @@
       "firstLoginTime": "2025-12-10T01:44:54.831Z",
       "lastLoginTime": "2025-12-10T02:52:59.751Z",
       "loginCount": 20
+    },
+    "1C88504E": {
+      "machineCode": "1C88-504E",
+      "firstLoginTime": "2025-12-10T03:06:41.728Z",
+      "lastLoginTime": "2025-12-10T03:06:41.728Z",
+      "loginCount": 1
     }
   }
 }
