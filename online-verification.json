@@ -99,6 +99,12 @@
       "firstLoginTime": "2025-12-10T20:27:53.926Z",
       "lastLoginTime": "2025-12-10T20:27:53.926Z",
       "loginCount": 1
+    },
+    "96243BE8": {
+      "machineCode": "9624-3BE8",
+      "firstLoginTime": "2025-12-10T20:39:55.651Z",
+      "lastLoginTime": "2025-12-10T20:39:55.651Z",
+      "loginCount": 1
     }
   }
 }
