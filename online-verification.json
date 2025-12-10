@@ -123,6 +123,12 @@
       "firstLoginTime": "2025-12-10T21:27:58.553Z",
       "lastLoginTime": "2025-12-10T21:43:45.461Z",
       "loginCount": 4
+    },
+    "40ED8053": {
+      "machineCode": "40ED-8053",
+      "firstLoginTime": "2025-12-10T21:45:31.262Z",
+      "lastLoginTime": "2025-12-10T21:45:31.262Z",
+      "loginCount": 1
     }
   }
 }
