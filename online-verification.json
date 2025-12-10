@@ -63,6 +63,12 @@
       "firstLoginTime": "2025-12-10T14:29:35.605Z",
       "lastLoginTime": "2025-12-10T14:29:35.605Z",
       "loginCount": 1
+    },
+    "32B98E98": {
+      "machineCode": "32B9-8E98",
+      "firstLoginTime": "2025-12-10T14:45:43.163Z",
+      "lastLoginTime": "2025-12-10T14:45:43.163Z",
+      "loginCount": 1
     }
   }
 }
