@@ -75,6 +75,12 @@
       "firstLoginTime": "2025-12-10T16:59:31.814Z",
       "lastLoginTime": "2025-12-10T16:59:31.814Z",
       "loginCount": 1
+    },
+    "B6D25A11": {
+      "machineCode": "B6D2-5A11",
+      "firstLoginTime": "2025-12-10T17:00:30.808Z",
+      "lastLoginTime": "2025-12-10T17:00:30.808Z",
+      "loginCount": 1
     }
   }
 }
