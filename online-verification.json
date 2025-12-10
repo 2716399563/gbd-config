@@ -69,6 +69,12 @@
       "firstLoginTime": "2025-12-10T14:45:43.163Z",
       "lastLoginTime": "2025-12-10T14:45:43.163Z",
       "loginCount": 1
+    },
+    "A6AF55A1": {
+      "machineCode": "A6AF-55A1",
+      "firstLoginTime": "2025-12-10T16:59:31.814Z",
+      "lastLoginTime": "2025-12-10T16:59:31.814Z",
+      "loginCount": 1
     }
   }
 }
