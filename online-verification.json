@@ -153,6 +153,12 @@
       "firstLoginTime": "2025-12-11T18:41:32.412Z",
       "lastLoginTime": "2025-12-11T18:54:25.847Z",
       "loginCount": 2
+    },
+    "7E55455B": {
+      "machineCode": "7E55-455B",
+      "firstLoginTime": "2025-12-11T19:16:48.968Z",
+      "lastLoginTime": "2025-12-11T19:16:48.968Z",
+      "loginCount": 1
     }
   }
 }
