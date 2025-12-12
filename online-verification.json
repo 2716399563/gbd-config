@@ -177,6 +177,12 @@
       "firstLoginTime": "2025-12-12T11:27:37.564Z",
       "lastLoginTime": "2025-12-12T11:27:37.564Z",
       "loginCount": 1
+    },
+    "84E84E12": {
+      "machineCode": "84E8-4E12",
+      "firstLoginTime": "2025-12-12T12:45:37.221Z",
+      "lastLoginTime": "2025-12-12T12:45:37.221Z",
+      "loginCount": 1
     }
   }
 }
