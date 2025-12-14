@@ -189,6 +189,12 @@
       "firstLoginTime": "2025-12-12T21:14:34.019Z",
       "lastLoginTime": "2025-12-13T00:59:19.970Z",
       "loginCount": 29
+    },
+    "B22F37E0": {
+      "machineCode": "B22F-37E0",
+      "firstLoginTime": "2025-12-14T13:35:13.065Z",
+      "lastLoginTime": "2025-12-14T13:35:13.065Z",
+      "loginCount": 1
     }
   }
 }
