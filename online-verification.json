@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-14",
+  "lastUpdate": "2025-12-15",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -151,8 +151,8 @@
     "C2B9B42D": {
       "machineCode": "C2B9-B42D",
       "firstLoginTime": "2025-12-11T18:41:32.412Z",
-      "lastLoginTime": "2025-12-14T22:28:52.533Z",
-      "loginCount": 21
+      "lastLoginTime": "2025-12-15T08:49:16.710Z",
+      "loginCount": 22
     },
     "7E55455B": {
       "machineCode": "7E55-455B",
