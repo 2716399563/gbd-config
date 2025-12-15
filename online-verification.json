@@ -219,6 +219,12 @@
       "firstLoginTime": "2025-12-15T20:57:21.542Z",
       "lastLoginTime": "2025-12-15T20:57:21.542Z",
       "loginCount": 1
+    },
+    "DE8871F4": {
+      "machineCode": "DE88-71F4",
+      "firstLoginTime": "2025-12-16T07:38:41.528Z",
+      "lastLoginTime": "2025-12-16T07:38:41.528Z",
+      "loginCount": 1
     }
   }
 }
