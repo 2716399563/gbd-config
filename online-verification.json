@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-16",
+  "lastUpdate": "2025-12-17",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -205,8 +205,8 @@
     "82813FC3": {
       "machineCode": "8281-3FC3",
       "firstLoginTime": "2025-12-14T13:39:16.854Z",
-      "lastLoginTime": "2025-12-16T20:13:53.557Z",
-      "loginCount": 4
+      "lastLoginTime": "2025-12-17T05:58:32.765Z",
+      "loginCount": 5
     },
     "E88D819B": {
       "machineCode": "E88D-819B",
