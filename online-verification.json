@@ -297,6 +297,12 @@
       "firstLoginTime": "2025-12-18T15:49:14.425Z",
       "lastLoginTime": "2025-12-18T18:45:58.060Z",
       "loginCount": 2
+    },
+    "F031B52C": {
+      "machineCode": "F031-B52C",
+      "firstLoginTime": "2025-12-18T19:12:45.244Z",
+      "lastLoginTime": "2025-12-18T19:12:45.244Z",
+      "loginCount": 1
     }
   }
 }
