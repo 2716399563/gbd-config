@@ -291,6 +291,12 @@
       "firstLoginTime": "2025-12-18T12:58:22.523Z",
       "lastLoginTime": "2025-12-18T12:58:22.523Z",
       "loginCount": 1
+    },
+    "4CD712AE": {
+      "machineCode": "4CD7-12AE",
+      "firstLoginTime": "2025-12-18T15:49:14.425Z",
+      "lastLoginTime": "2025-12-18T15:49:14.425Z",
+      "loginCount": 1
     }
   }
 }
