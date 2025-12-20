@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-19",
+  "lastUpdate": "2025-12-20",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -133,8 +133,8 @@
     "B47031DE": {
       "machineCode": "B470-31DE",
       "firstLoginTime": "2025-12-11T01:15:03.651Z",
-      "lastLoginTime": "2025-12-19T21:08:56.331Z",
-      "loginCount": 5
+      "lastLoginTime": "2025-12-20T09:31:15.360Z",
+      "loginCount": 6
     },
     "获取失败: 无法等待处理。": {
       "machineCode": "获取失败: 无法等待处理。",
