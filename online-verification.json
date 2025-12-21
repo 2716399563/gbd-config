@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-20",
+  "lastUpdate": "2025-12-21",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -295,8 +295,8 @@
     "4CD712AE": {
       "machineCode": "4CD7-12AE",
       "firstLoginTime": "2025-12-18T15:49:14.425Z",
-      "lastLoginTime": "2025-12-20T17:37:22.050Z",
-      "loginCount": 6
+      "lastLoginTime": "2025-12-21T13:54:50.617Z",
+      "loginCount": 7
     },
     "F031B52C": {
       "machineCode": "F031-B52C",
