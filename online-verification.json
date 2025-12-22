@@ -327,6 +327,12 @@
       "firstLoginTime": "2025-12-20T22:40:31.207Z",
       "lastLoginTime": "2025-12-21T21:26:27.524Z",
       "loginCount": 3
+    },
+    "137EB70F": {
+      "machineCode": "137E-B70F",
+      "firstLoginTime": "2025-12-22T17:50:44.026Z",
+      "lastLoginTime": "2025-12-22T17:50:44.026Z",
+      "loginCount": 1
     }
   }
 }
