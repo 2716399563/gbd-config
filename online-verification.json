@@ -345,6 +345,12 @@
       "firstLoginTime": "2025-12-22T22:31:21.671Z",
       "lastLoginTime": "2025-12-22T22:31:21.671Z",
       "loginCount": 1
+    },
+    "E2964EDC": {
+      "machineCode": "E296-4EDC",
+      "firstLoginTime": "2025-12-23T17:58:54.916Z",
+      "lastLoginTime": "2025-12-23T17:58:54.916Z",
+      "loginCount": 1
     }
   }
 }
