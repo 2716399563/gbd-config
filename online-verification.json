@@ -351,6 +351,12 @@
       "firstLoginTime": "2025-12-23T17:58:54.916Z",
       "lastLoginTime": "2025-12-23T17:59:22.861Z",
       "loginCount": 2
+    },
+    "22150AE3": {
+      "machineCode": "2215-0AE3",
+      "firstLoginTime": "2025-12-23T18:10:26.635Z",
+      "lastLoginTime": "2025-12-23T18:10:26.635Z",
+      "loginCount": 1
     }
   }
 }
