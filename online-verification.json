@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-23",
+  "lastUpdate": "2025-12-24",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -337,8 +337,8 @@
     "260F3E8F": {
       "machineCode": "260F-3E8F",
       "firstLoginTime": "2025-12-22T19:28:38.290Z",
-      "lastLoginTime": "2025-12-22T19:28:38.290Z",
-      "loginCount": 1
+      "lastLoginTime": "2025-12-24T02:06:03.443Z",
+      "loginCount": 2
     },
     "333A2F5": {
       "machineCode": "-333-A2F5",
