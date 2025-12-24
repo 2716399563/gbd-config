@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-24",
+  "lastUpdate": "2025-12-25",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -85,8 +85,8 @@
     "C6E7E111": {
       "machineCode": "C6E7-E111",
       "firstLoginTime": "2025-12-10T18:30:01.750Z",
-      "lastLoginTime": "2025-12-14T21:51:32.369Z",
-      "loginCount": 2
+      "lastLoginTime": "2025-12-25T00:03:26.278Z",
+      "loginCount": 3
     },
     "6610090C": {
       "machineCode": "6610-090C",
