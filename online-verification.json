@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-19",
+  "lastUpdate": "2025-12-25",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -289,8 +289,8 @@
     "B66351A4": {
       "machineCode": "B663-51A4",
       "firstLoginTime": "2025-12-18T12:58:22.523Z",
-      "lastLoginTime": "2025-12-19T23:14:45.122Z",
-      "loginCount": 3
+      "lastLoginTime": "2025-12-25T16:12:42.007Z",
+      "loginCount": 4
     },
     "4CD712AE": {
       "machineCode": "4CD7-12AE",
