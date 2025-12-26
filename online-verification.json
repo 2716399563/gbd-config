@@ -405,6 +405,12 @@
       "firstLoginTime": "2025-12-26T17:36:33.247Z",
       "lastLoginTime": "2025-12-26T21:54:47.526Z",
       "loginCount": 6
+    },
+    "6845FC45": {
+      "machineCode": "6845-FC45",
+      "firstLoginTime": "2025-12-26T23:50:54.422Z",
+      "lastLoginTime": "2025-12-26T23:50:54.422Z",
+      "loginCount": 1
     }
   }
 }
