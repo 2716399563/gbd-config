@@ -393,6 +393,12 @@
       "firstLoginTime": "2025-12-26T00:21:53.056Z",
       "lastLoginTime": "2025-12-26T09:56:08.527Z",
       "loginCount": 7
+    },
+    "BA581B09": {
+      "machineCode": "BA58-1B09",
+      "firstLoginTime": "2025-12-26T10:29:01.681Z",
+      "lastLoginTime": "2025-12-26T10:29:01.681Z",
+      "loginCount": 1
     }
   }
 }
