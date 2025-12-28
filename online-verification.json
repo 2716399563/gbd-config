@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-28",
+  "lastUpdate": "2025-12-29",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -397,8 +397,8 @@
     "BA581B09": {
       "machineCode": "BA58-1B09",
       "firstLoginTime": "2025-12-26T10:29:01.681Z",
-      "lastLoginTime": "2025-12-26T22:51:17.717Z",
-      "loginCount": 4
+      "lastLoginTime": "2025-12-29T00:30:21.820Z",
+      "loginCount": 5
     },
     "FE35EE00": {
       "machineCode": "FE35-EE00",
