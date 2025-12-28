@@ -435,6 +435,12 @@
       "firstLoginTime": "2025-12-28T20:36:35.768Z",
       "lastLoginTime": "2025-12-28T20:43:38.728Z",
       "loginCount": 2
+    },
+    "562B744D": {
+      "machineCode": "562B-744D",
+      "firstLoginTime": "2025-12-28T21:16:01.614Z",
+      "lastLoginTime": "2025-12-28T21:16:01.614Z",
+      "loginCount": 1
     }
   }
 }
