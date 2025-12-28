@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-27",
+  "lastUpdate": "2025-12-28",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -417,6 +417,12 @@
       "firstLoginTime": "2025-12-27T18:05:08.146Z",
       "lastLoginTime": "2025-12-27T18:07:30.550Z",
       "loginCount": 2
+    },
+    "1832A345": {
+      "machineCode": "1832-A345",
+      "firstLoginTime": "2025-12-28T10:34:25.942Z",
+      "lastLoginTime": "2025-12-28T10:34:25.942Z",
+      "loginCount": 1
     }
   }
 }
