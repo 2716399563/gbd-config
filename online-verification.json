@@ -441,6 +441,12 @@
       "firstLoginTime": "2025-12-28T21:16:01.614Z",
       "lastLoginTime": "2025-12-28T21:16:01.614Z",
       "loginCount": 1
+    },
+    "5E9DB467": {
+      "machineCode": "5E9D-B467",
+      "firstLoginTime": "2025-12-29T10:59:36.826Z",
+      "lastLoginTime": "2025-12-29T10:59:36.826Z",
+      "loginCount": 1
     }
   }
 }
