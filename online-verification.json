@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-29",
+  "lastUpdate": "2025-12-30",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -451,8 +451,8 @@
     "F8672F66": {
       "machineCode": "F867-2F66",
       "firstLoginTime": "2025-12-29T23:17:49.166Z",
-      "lastLoginTime": "2025-12-29T23:48:47.478Z",
-      "loginCount": 11
+      "lastLoginTime": "2025-12-30T00:01:08.079Z",
+      "loginCount": 12
     }
   }
 }
