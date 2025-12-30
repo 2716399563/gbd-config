@@ -467,6 +467,12 @@
       "firstLoginTime": "2025-12-30T22:09:42.866Z",
       "lastLoginTime": "2025-12-30T22:09:42.866Z",
       "loginCount": 1
+    },
+    "F0EF0040": {
+      "machineCode": "F0EF-0040",
+      "firstLoginTime": "2025-12-30T23:37:22.372Z",
+      "lastLoginTime": "2025-12-30T23:37:22.372Z",
+      "loginCount": 1
     }
   }
 }
