@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2025-12-30",
+  "lastUpdate": "2025-12-31",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -333,8 +333,8 @@
     "137EB70F": {
       "machineCode": "137E-B70F",
       "firstLoginTime": "2025-12-22T17:50:44.026Z",
-      "lastLoginTime": "2025-12-27T10:14:16.909Z",
-      "loginCount": 24
+      "lastLoginTime": "2025-12-31T09:06:00.274Z",
+      "loginCount": 25
     },
     "260F3E8F": {
       "machineCode": "260F-3E8F",
