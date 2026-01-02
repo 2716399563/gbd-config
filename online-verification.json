@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-02",
+  "lastUpdate": "2026-01-03",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -381,8 +381,8 @@
     "D4DFF877": {
       "machineCode": "D4DF-F877",
       "firstLoginTime": "2025-12-25T17:23:12.617Z",
-      "lastLoginTime": "2025-12-27T20:47:21.058Z",
-      "loginCount": 7
+      "lastLoginTime": "2026-01-03T03:20:11.918Z",
+      "loginCount": 8
     },
     "FEFB1844": {
       "machineCode": "FEFB-1844",
