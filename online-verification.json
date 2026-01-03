@@ -491,6 +491,12 @@
       "firstLoginTime": "2026-01-01T23:03:49.909Z",
       "lastLoginTime": "2026-01-01T23:31:54.560Z",
       "loginCount": 2
+    },
+    "081E0ADC": {
+      "machineCode": "081E-0ADC",
+      "firstLoginTime": "2026-01-03T17:59:32.874Z",
+      "lastLoginTime": "2026-01-03T17:59:32.874Z",
+      "loginCount": 1
     }
   }
 }
