@@ -503,6 +503,12 @@
       "firstLoginTime": "2026-01-03T19:43:23.386Z",
       "lastLoginTime": "2026-01-03T19:44:17.304Z",
       "loginCount": 2
+    },
+    "CE9DAE6D": {
+      "machineCode": "CE9D-AE6D",
+      "firstLoginTime": "2026-01-04T19:05:39.809Z",
+      "lastLoginTime": "2026-01-04T19:05:39.809Z",
+      "loginCount": 1
     }
   }
 }
