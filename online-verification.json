@@ -509,6 +509,12 @@
       "firstLoginTime": "2026-01-04T19:05:39.809Z",
       "lastLoginTime": "2026-01-05T20:20:16.350Z",
       "loginCount": 12
+    },
+    "149E43AF": {
+      "machineCode": "149E-43AF",
+      "firstLoginTime": "2026-01-06T11:26:49.668Z",
+      "lastLoginTime": "2026-01-06T11:26:49.668Z",
+      "loginCount": 1
     }
   }
 }
