@@ -521,6 +521,12 @@
       "firstLoginTime": "2026-01-06T14:39:17.019Z",
       "lastLoginTime": "2026-01-06T14:50:29.585Z",
       "loginCount": 5
+    },
+    "002B0E60": {
+      "machineCode": "002B-0E60",
+      "firstLoginTime": "2026-01-06T19:11:44.425Z",
+      "lastLoginTime": "2026-01-06T19:11:44.425Z",
+      "loginCount": 1
     }
   }
 }
