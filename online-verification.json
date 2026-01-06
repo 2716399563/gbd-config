@@ -527,6 +527,12 @@
       "firstLoginTime": "2026-01-06T19:11:44.425Z",
       "lastLoginTime": "2026-01-06T19:11:44.425Z",
       "loginCount": 1
+    },
+    "4CCF0996": {
+      "machineCode": "4CCF-0996",
+      "firstLoginTime": "2026-01-06T21:59:36.861Z",
+      "lastLoginTime": "2026-01-06T21:59:36.861Z",
+      "loginCount": 1
     }
   }
 }
