@@ -515,6 +515,12 @@
       "firstLoginTime": "2026-01-06T11:26:49.668Z",
       "lastLoginTime": "2026-01-06T11:39:00.777Z",
       "loginCount": 3
+    },
+    "AA5F6E48": {
+      "machineCode": "AA5F-6E48",
+      "firstLoginTime": "2026-01-06T14:39:17.019Z",
+      "lastLoginTime": "2026-01-06T14:39:17.019Z",
+      "loginCount": 1
     }
   }
 }
