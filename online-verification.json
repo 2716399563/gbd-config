@@ -539,6 +539,12 @@
       "firstLoginTime": "2026-01-07T11:21:10.769Z",
       "lastLoginTime": "2026-01-07T21:11:43.654Z",
       "loginCount": 6
+    },
+    "DE261B41": {
+      "machineCode": "DE26-1B41",
+      "firstLoginTime": "2026-01-07T21:16:30.113Z",
+      "lastLoginTime": "2026-01-07T21:16:30.113Z",
+      "loginCount": 1
     }
   }
 }
