@@ -545,6 +545,12 @@
       "firstLoginTime": "2026-01-07T21:16:30.113Z",
       "lastLoginTime": "2026-01-07T21:30:53.205Z",
       "loginCount": 4
+    },
+    "76F0CADB": {
+      "machineCode": "76F0-CADB",
+      "firstLoginTime": "2026-01-07T22:21:09.050Z",
+      "lastLoginTime": "2026-01-07T22:21:09.050Z",
+      "loginCount": 1
     }
   }
 }
