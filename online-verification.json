@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-06",
+  "lastUpdate": "2026-01-07",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -177,8 +177,8 @@
     "50B1598E": {
       "machineCode": "50B1-598E",
       "firstLoginTime": "2025-12-11T23:10:56.090Z",
-      "lastLoginTime": "2026-01-06T21:10:11.206Z",
-      "loginCount": 22
+      "lastLoginTime": "2026-01-07T08:28:16.586Z",
+      "loginCount": 23
     },
     "1866E694": {
       "machineCode": "1866-E694",
