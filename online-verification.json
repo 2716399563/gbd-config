@@ -533,6 +533,12 @@
       "firstLoginTime": "2026-01-06T21:59:36.861Z",
       "lastLoginTime": "2026-01-06T21:59:55.095Z",
       "loginCount": 2
+    },
+    "804A540C": {
+      "machineCode": "804A-540C",
+      "firstLoginTime": "2026-01-07T11:21:10.769Z",
+      "lastLoginTime": "2026-01-07T11:21:10.769Z",
+      "loginCount": 1
     }
   }
 }
