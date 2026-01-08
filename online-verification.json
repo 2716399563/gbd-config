@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-08",
+  "lastUpdate": "2026-01-09",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -327,8 +327,8 @@
     "15AA8A08": {
       "machineCode": "15AA-8A08",
       "firstLoginTime": "2025-12-19T22:48:47.998Z",
-      "lastLoginTime": "2026-01-08T02:22:28.901Z",
-      "loginCount": 3
+      "lastLoginTime": "2026-01-09T00:34:23.642Z",
+      "loginCount": 4
     },
     "84123C7D": {
       "machineCode": "8412-3C7D",
