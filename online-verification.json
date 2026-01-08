@@ -569,6 +569,12 @@
       "firstLoginTime": "2026-01-08T18:45:01.355Z",
       "lastLoginTime": "2026-01-08T18:45:01.355Z",
       "loginCount": 1
+    },
+    "425893EE": {
+      "machineCode": "4258-93EE",
+      "firstLoginTime": "2026-01-08T21:20:45.088Z",
+      "lastLoginTime": "2026-01-08T21:20:45.088Z",
+      "loginCount": 1
     }
   }
 }
