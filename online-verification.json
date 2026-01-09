@@ -575,6 +575,12 @@
       "firstLoginTime": "2026-01-08T21:20:45.088Z",
       "lastLoginTime": "2026-01-09T14:15:54.228Z",
       "loginCount": 2
+    },
+    "485C4F8F": {
+      "machineCode": "485C-4F8F",
+      "firstLoginTime": "2026-01-09T17:15:10.288Z",
+      "lastLoginTime": "2026-01-09T17:15:10.288Z",
+      "loginCount": 1
     }
   }
 }
