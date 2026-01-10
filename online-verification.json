@@ -593,6 +593,12 @@
       "firstLoginTime": "2026-01-10T21:53:11.300Z",
       "lastLoginTime": "2026-01-10T22:11:09.065Z",
       "loginCount": 6
+    },
+    "68273D56": {
+      "machineCode": "6827-3D56",
+      "firstLoginTime": "2026-01-11T02:07:11.862Z",
+      "lastLoginTime": "2026-01-11T02:07:11.862Z",
+      "loginCount": 1
     }
   }
 }
