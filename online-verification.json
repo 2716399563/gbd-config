@@ -617,6 +617,12 @@
       "firstLoginTime": "2026-01-11T16:50:20.020Z",
       "lastLoginTime": "2026-01-11T16:50:20.020Z",
       "loginCount": 1
+    },
+    "D28F0130": {
+      "machineCode": "D28F-0130",
+      "firstLoginTime": "2026-01-11T20:41:32.854Z",
+      "lastLoginTime": "2026-01-11T20:41:32.854Z",
+      "loginCount": 1
     }
   }
 }
