@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-11",
+  "lastUpdate": "2026-01-12",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -567,8 +567,8 @@
     "3A23A364": {
       "machineCode": "3A23-A364",
       "firstLoginTime": "2026-01-08T18:45:01.355Z",
-      "lastLoginTime": "2026-01-08T18:45:01.355Z",
-      "loginCount": 1
+      "lastLoginTime": "2026-01-12T00:18:45.609Z",
+      "loginCount": 2
     },
     "425893EE": {
       "machineCode": "4258-93EE",
