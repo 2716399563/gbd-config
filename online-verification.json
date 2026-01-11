@@ -599,6 +599,12 @@
       "firstLoginTime": "2026-01-11T02:07:11.862Z",
       "lastLoginTime": "2026-01-11T02:12:22.877Z",
       "loginCount": 2
+    },
+    "2A20808B": {
+      "machineCode": "2A20-808B",
+      "firstLoginTime": "2026-01-11T11:59:17.455Z",
+      "lastLoginTime": "2026-01-11T11:59:17.455Z",
+      "loginCount": 1
     }
   }
 }
