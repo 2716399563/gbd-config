@@ -635,6 +635,12 @@
       "firstLoginTime": "2026-01-13T08:52:12.928Z",
       "lastLoginTime": "2026-01-13T08:52:19.311Z",
       "loginCount": 2
+    },
+    "4E590F18": {
+      "machineCode": "4E59-0F18",
+      "firstLoginTime": "2026-01-13T17:20:49.134Z",
+      "lastLoginTime": "2026-01-13T17:20:49.134Z",
+      "loginCount": 1
     }
   }
 }
