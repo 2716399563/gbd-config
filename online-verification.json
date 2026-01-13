@@ -629,6 +629,12 @@
       "firstLoginTime": "2026-01-12T11:20:37.052Z",
       "lastLoginTime": "2026-01-12T11:20:37.052Z",
       "loginCount": 1
+    },
+    "0AE34879": {
+      "machineCode": "0AE3-4879",
+      "firstLoginTime": "2026-01-13T08:52:12.928Z",
+      "lastLoginTime": "2026-01-13T08:52:12.928Z",
+      "loginCount": 1
     }
   }
 }
