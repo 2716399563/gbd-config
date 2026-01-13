@@ -647,6 +647,12 @@
       "firstLoginTime": "2026-01-13T21:27:51.664Z",
       "lastLoginTime": "2026-01-13T21:31:42.030Z",
       "loginCount": 2
+    },
+    "067DA733": {
+      "machineCode": "067D-A733",
+      "firstLoginTime": "2026-01-13T21:47:30.665Z",
+      "lastLoginTime": "2026-01-13T21:47:30.665Z",
+      "loginCount": 1
     }
   }
 }
