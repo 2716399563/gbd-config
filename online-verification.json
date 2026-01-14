@@ -665,6 +665,12 @@
       "firstLoginTime": "2026-01-13T23:08:00.307Z",
       "lastLoginTime": "2026-01-13T23:08:00.307Z",
       "loginCount": 1
+    },
+    "BA4CA28E": {
+      "machineCode": "BA4C-A28E",
+      "firstLoginTime": "2026-01-14T12:26:39.048Z",
+      "lastLoginTime": "2026-01-14T12:26:39.048Z",
+      "loginCount": 1
     }
   }
 }
