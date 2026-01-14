@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-14",
+  "lastUpdate": "2026-01-15",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -51,8 +51,8 @@
     "AE6081BC": {
       "machineCode": "AE60-81BC",
       "firstLoginTime": "2025-12-10T01:44:54.831Z",
-      "lastLoginTime": "2026-01-14T23:57:34.121Z",
-      "loginCount": 241
+      "lastLoginTime": "2026-01-15T00:06:42.425Z",
+      "loginCount": 242
     },
     "1C88504E": {
       "machineCode": "1C88-504E",
