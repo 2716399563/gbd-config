@@ -683,6 +683,12 @@
       "firstLoginTime": "2026-01-14T15:33:19.020Z",
       "lastLoginTime": "2026-01-14T15:33:19.020Z",
       "loginCount": 1
+    },
+    "1C0C1CCC": {
+      "machineCode": "1C0C-1CCC",
+      "firstLoginTime": "2026-01-15T07:17:51.994Z",
+      "lastLoginTime": "2026-01-15T07:17:51.994Z",
+      "loginCount": 1
     }
   }
 }
