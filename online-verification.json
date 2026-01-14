@@ -677,6 +677,12 @@
       "firstLoginTime": "2026-01-14T13:01:34.294Z",
       "lastLoginTime": "2026-01-14T13:01:34.294Z",
       "loginCount": 1
+    },
+    "7CE83B05": {
+      "machineCode": "7CE8-3B05",
+      "firstLoginTime": "2026-01-14T15:33:19.020Z",
+      "lastLoginTime": "2026-01-14T15:33:19.020Z",
+      "loginCount": 1
     }
   }
 }
