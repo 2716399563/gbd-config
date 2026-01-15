@@ -689,6 +689,12 @@
       "firstLoginTime": "2026-01-15T07:17:51.994Z",
       "lastLoginTime": "2026-01-15T07:18:34.933Z",
       "loginCount": 2
+    },
+    "8A83244C": {
+      "machineCode": "8A83-244C",
+      "firstLoginTime": "2026-01-15T11:28:48.277Z",
+      "lastLoginTime": "2026-01-15T11:28:48.277Z",
+      "loginCount": 1
     }
   }
 }
