@@ -695,6 +695,12 @@
       "firstLoginTime": "2026-01-15T11:28:48.277Z",
       "lastLoginTime": "2026-01-15T11:28:48.277Z",
       "loginCount": 1
+    },
+    "2830B1DD": {
+      "machineCode": "2830-B1DD",
+      "firstLoginTime": "2026-01-16T11:11:34.520Z",
+      "lastLoginTime": "2026-01-16T11:11:34.520Z",
+      "loginCount": 1
     }
   }
 }
