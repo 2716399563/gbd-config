@@ -713,6 +713,12 @@
       "firstLoginTime": "2026-01-16T14:15:32.129Z",
       "lastLoginTime": "2026-01-16T14:40:01.061Z",
       "loginCount": 9
+    },
+    "B0B7B12B": {
+      "machineCode": "B0B7-B12B",
+      "firstLoginTime": "2026-01-16T14:57:52.174Z",
+      "lastLoginTime": "2026-01-16T14:57:52.174Z",
+      "loginCount": 1
     }
   }
 }
