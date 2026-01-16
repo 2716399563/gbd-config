@@ -707,6 +707,12 @@
       "firstLoginTime": "2026-01-16T13:11:14.964Z",
       "lastLoginTime": "2026-01-16T13:11:14.964Z",
       "loginCount": 1
+    },
+    "E00D3451": {
+      "machineCode": "E00D-3451",
+      "firstLoginTime": "2026-01-16T14:15:32.129Z",
+      "lastLoginTime": "2026-01-16T14:15:32.129Z",
+      "loginCount": 1
     }
   }
 }
