@@ -701,6 +701,12 @@
       "firstLoginTime": "2026-01-16T11:11:34.520Z",
       "lastLoginTime": "2026-01-16T12:18:13.908Z",
       "loginCount": 2
+    },
+    "A6EDB6E7": {
+      "machineCode": "A6ED-B6E7",
+      "firstLoginTime": "2026-01-16T13:11:14.964Z",
+      "lastLoginTime": "2026-01-16T13:11:14.964Z",
+      "loginCount": 1
     }
   }
 }
