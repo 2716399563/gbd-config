@@ -749,6 +749,12 @@
       "firstLoginTime": "2026-01-17T15:34:28.700Z",
       "lastLoginTime": "2026-01-17T16:20:41.347Z",
       "loginCount": 10
+    },
+    "870314AF": {
+      "machineCode": "8703-14AF",
+      "firstLoginTime": "2026-01-17T16:35:01.586Z",
+      "lastLoginTime": "2026-01-17T16:35:01.586Z",
+      "loginCount": 1
     }
   }
 }
