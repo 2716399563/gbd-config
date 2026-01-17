@@ -755,6 +755,12 @@
       "firstLoginTime": "2026-01-17T16:35:01.586Z",
       "lastLoginTime": "2026-01-17T17:02:45.624Z",
       "loginCount": 3
+    },
+    "D20D5690": {
+      "machineCode": "D20D-5690",
+      "firstLoginTime": "2026-01-18T01:27:19.054Z",
+      "lastLoginTime": "2026-01-18T01:27:19.054Z",
+      "loginCount": 1
     }
   }
 }
