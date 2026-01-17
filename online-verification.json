@@ -743,6 +743,12 @@
       "firstLoginTime": "2026-01-17T08:38:53.294Z",
       "lastLoginTime": "2026-01-17T08:39:17.081Z",
       "loginCount": 2
+    },
+    "001E66DA": {
+      "machineCode": "001E-66DA",
+      "firstLoginTime": "2026-01-17T15:34:28.700Z",
+      "lastLoginTime": "2026-01-17T15:34:28.700Z",
+      "loginCount": 1
     }
   }
 }
