@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-17",
+  "lastUpdate": "2026-01-18",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -555,8 +555,8 @@
     "18C7E9A6": {
       "machineCode": "18C7-E9A6",
       "firstLoginTime": "2026-01-08T17:14:43.993Z",
-      "lastLoginTime": "2026-01-11T17:06:46.580Z",
-      "loginCount": 5
+      "lastLoginTime": "2026-01-18T00:10:29.835Z",
+      "loginCount": 6
     },
     "3A5ADC60": {
       "machineCode": "3A5A-DC60",
