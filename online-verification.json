@@ -791,6 +791,12 @@
       "firstLoginTime": "2026-01-18T22:05:23.222Z",
       "lastLoginTime": "2026-01-18T22:06:16.099Z",
       "loginCount": 2
+    },
+    "F04F7F69": {
+      "machineCode": "F04F-7F69",
+      "firstLoginTime": "2026-01-18T22:26:05.430Z",
+      "lastLoginTime": "2026-01-18T22:26:05.430Z",
+      "loginCount": 1
     }
   }
 }
