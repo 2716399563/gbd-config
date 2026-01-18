@@ -779,6 +779,12 @@
       "firstLoginTime": "2026-01-18T17:17:21.432Z",
       "lastLoginTime": "2026-01-18T17:27:17.383Z",
       "loginCount": 9
+    },
+    "4A65ACE7": {
+      "machineCode": "4A65-ACE7",
+      "firstLoginTime": "2026-01-18T18:57:21.059Z",
+      "lastLoginTime": "2026-01-18T18:57:21.059Z",
+      "loginCount": 1
     }
   }
 }
