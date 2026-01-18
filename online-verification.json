@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-18",
+  "lastUpdate": "2026-01-19",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -801,8 +801,8 @@
     "ECA0D6D8": {
       "machineCode": "ECA0-D6D8",
       "firstLoginTime": "2026-01-18T23:26:38.104Z",
-      "lastLoginTime": "2026-01-18T23:26:38.104Z",
-      "loginCount": 1
+      "lastLoginTime": "2026-01-19T00:00:27.678Z",
+      "loginCount": 2
     }
   }
 }
