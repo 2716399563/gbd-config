@@ -761,6 +761,12 @@
       "firstLoginTime": "2026-01-18T01:27:19.054Z",
       "lastLoginTime": "2026-01-18T01:27:19.054Z",
       "loginCount": 1
+    },
+    "2EC0129E": {
+      "machineCode": "2EC0-129E",
+      "firstLoginTime": "2026-01-18T16:50:33.002Z",
+      "lastLoginTime": "2026-01-18T16:50:33.002Z",
+      "loginCount": 1
     }
   }
 }
