@@ -767,6 +767,12 @@
       "firstLoginTime": "2026-01-18T16:50:33.002Z",
       "lastLoginTime": "2026-01-18T16:54:51.384Z",
       "loginCount": 3
+    },
+    "74112A6F": {
+      "machineCode": "7411-2A6F",
+      "firstLoginTime": "2026-01-18T17:13:52.187Z",
+      "lastLoginTime": "2026-01-18T17:13:52.187Z",
+      "loginCount": 1
     }
   }
 }
