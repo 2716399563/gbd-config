@@ -10,7 +10,8 @@
   "blacklist": {
     "enabled": true,
     "machineIds": [
-      "44AD-7537"
+      "44AD-7537",
+      "8703-14AF"
     ],
     "message": "Machine code has been blocked!\n\nPlease contact admin for reauthorization.\nMachine code: "
   },
