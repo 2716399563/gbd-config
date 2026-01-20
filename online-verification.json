@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-19",
+  "lastUpdate": "2026-01-20",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -820,8 +820,8 @@
     "2C5B4D54": {
       "machineCode": "2C5B-4D54",
       "firstLoginTime": "2026-01-19T13:57:44.814Z",
-      "lastLoginTime": "2026-01-19T13:57:44.814Z",
-      "loginCount": 1
+      "lastLoginTime": "2026-01-20T10:31:45.916Z",
+      "loginCount": 2
     },
     "5E37B8C1": {
       "machineCode": "5E37-B8C1",
