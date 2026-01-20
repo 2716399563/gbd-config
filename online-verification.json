@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-20",
+  "lastUpdate": "2026-01-21",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -544,8 +544,8 @@
     "DE261B41": {
       "machineCode": "DE26-1B41",
       "firstLoginTime": "2026-01-07T21:16:30.113Z",
-      "lastLoginTime": "2026-01-19T22:09:39.905Z",
-      "loginCount": 5
+      "lastLoginTime": "2026-01-21T00:05:09.535Z",
+      "loginCount": 6
     },
     "76F0CADB": {
       "machineCode": "76F0-CADB",
