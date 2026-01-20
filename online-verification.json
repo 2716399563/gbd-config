@@ -840,6 +840,12 @@
       "firstLoginTime": "2026-01-20T12:07:50.436Z",
       "lastLoginTime": "2026-01-20T12:07:50.436Z",
       "loginCount": 1
+    },
+    "DC77080F": {
+      "machineCode": "DC77-080F",
+      "firstLoginTime": "2026-01-20T12:09:13.407Z",
+      "lastLoginTime": "2026-01-20T12:09:13.407Z",
+      "loginCount": 1
     }
   }
 }
