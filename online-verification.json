@@ -852,6 +852,12 @@
       "firstLoginTime": "2026-01-20T12:23:56.251Z",
       "lastLoginTime": "2026-01-20T12:26:38.650Z",
       "loginCount": 2
+    },
+    "C6C675FA": {
+      "machineCode": "C6C6-75FA",
+      "firstLoginTime": "2026-01-20T12:31:25.350Z",
+      "lastLoginTime": "2026-01-20T12:31:25.350Z",
+      "loginCount": 1
     }
   }
 }
