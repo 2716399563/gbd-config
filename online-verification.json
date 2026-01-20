@@ -834,6 +834,12 @@
       "firstLoginTime": "2026-01-19T21:14:20.168Z",
       "lastLoginTime": "2026-01-19T21:14:42.621Z",
       "loginCount": 2
+    },
+    "3406FF24": {
+      "machineCode": "3406-FF24",
+      "firstLoginTime": "2026-01-20T12:07:50.436Z",
+      "lastLoginTime": "2026-01-20T12:07:50.436Z",
+      "loginCount": 1
     }
   }
 }
