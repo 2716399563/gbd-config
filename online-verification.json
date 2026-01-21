@@ -864,6 +864,12 @@
       "firstLoginTime": "2026-01-20T15:01:23.811Z",
       "lastLoginTime": "2026-01-20T23:46:32.112Z",
       "loginCount": 7
+    },
+    "E07BB14E": {
+      "machineCode": "E07B-B14E",
+      "firstLoginTime": "2026-01-21T20:15:42.378Z",
+      "lastLoginTime": "2026-01-21T20:15:42.378Z",
+      "loginCount": 1
     }
   }
 }
