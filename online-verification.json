@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-22",
+  "lastUpdate": "2026-01-23",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -869,6 +869,12 @@
       "machineCode": "E07B-B14E",
       "firstLoginTime": "2026-01-21T20:15:42.378Z",
       "lastLoginTime": "2026-01-21T20:15:42.378Z",
+      "loginCount": 1
+    },
+    "C8D183D6": {
+      "machineCode": "C8D1-83D6",
+      "firstLoginTime": "2026-01-23T13:42:00.510Z",
+      "lastLoginTime": "2026-01-23T13:42:00.510Z",
       "loginCount": 1
     }
   }
