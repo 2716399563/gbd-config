@@ -876,6 +876,12 @@
       "firstLoginTime": "2026-01-23T13:42:00.510Z",
       "lastLoginTime": "2026-01-23T13:42:00.510Z",
       "loginCount": 1
+    },
+    "3A7D5146": {
+      "machineCode": "3A7D-5146",
+      "firstLoginTime": "2026-01-24T23:24:59.484Z",
+      "lastLoginTime": "2026-01-24T23:24:59.484Z",
+      "loginCount": 1
     }
   }
 }
