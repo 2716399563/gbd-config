@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-25",
+  "lastUpdate": "2026-01-26",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -484,8 +484,8 @@
     "C42B5DDE": {
       "machineCode": "C42B-5DDE",
       "firstLoginTime": "2026-01-01T16:36:32.361Z",
-      "lastLoginTime": "2026-01-25T18:09:56.434Z",
-      "loginCount": 13
+      "lastLoginTime": "2026-01-26T03:51:52.270Z",
+      "loginCount": 14
     },
     "70BBB06E": {
       "machineCode": "70BB-B06E",
