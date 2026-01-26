@@ -882,6 +882,12 @@
       "firstLoginTime": "2026-01-24T23:24:59.484Z",
       "lastLoginTime": "2026-01-24T23:24:59.484Z",
       "loginCount": 1
+    },
+    "70A525A3": {
+      "machineCode": "70A5-25A3",
+      "firstLoginTime": "2026-01-26T18:09:31.801Z",
+      "lastLoginTime": "2026-01-26T18:09:31.801Z",
+      "loginCount": 1
     }
   }
 }
