@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-27",
+  "lastUpdate": "2026-01-28",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -580,8 +580,8 @@
     "485C4F8F": {
       "machineCode": "485C-4F8F",
       "firstLoginTime": "2026-01-09T17:15:10.288Z",
-      "lastLoginTime": "2026-01-24T12:57:37.433Z",
-      "loginCount": 11
+      "lastLoginTime": "2026-01-28T00:53:22.095Z",
+      "loginCount": 12
     },
     "A4C63F13": {
       "machineCode": "A4C6-3F13",
