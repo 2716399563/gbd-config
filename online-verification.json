@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-28",
+  "lastUpdate": "2026-01-29",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -772,8 +772,8 @@
     "74112A6F": {
       "machineCode": "7411-2A6F",
       "firstLoginTime": "2026-01-18T17:13:52.187Z",
-      "lastLoginTime": "2026-01-21T01:44:27.860Z",
-      "loginCount": 3
+      "lastLoginTime": "2026-01-29T08:55:24.755Z",
+      "loginCount": 4
     },
     "1C446475": {
       "machineCode": "1C44-6475",
