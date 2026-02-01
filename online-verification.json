@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-01-31",
+  "lastUpdate": "2026-02-01",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -316,8 +316,8 @@
     "AE6803DF": {
       "machineCode": "AE68-03DF",
       "firstLoginTime": "2025-12-19T10:47:45.194Z",
-      "lastLoginTime": "2026-01-26T10:43:04.191Z",
-      "loginCount": 13
+      "lastLoginTime": "2026-02-01T09:18:08.233Z",
+      "loginCount": 14
     },
     "065CE910": {
       "machineCode": "065C-E910",
