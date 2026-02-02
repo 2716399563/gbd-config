@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-02",
+  "lastUpdate": "2026-02-03",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -460,8 +460,8 @@
     "F8672F66": {
       "machineCode": "F867-2F66",
       "firstLoginTime": "2025-12-29T23:17:49.166Z",
-      "lastLoginTime": "2026-02-02T13:56:53.520Z",
-      "loginCount": 22
+      "lastLoginTime": "2026-02-03T00:42:43.841Z",
+      "loginCount": 23
     },
     "2609A3DD": {
       "machineCode": "2609-A3DD",
