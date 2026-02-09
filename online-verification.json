@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-08",
+  "lastUpdate": "2026-02-09",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -238,8 +238,8 @@
     "8A61A5E9": {
       "machineCode": "8A61-A5E9",
       "firstLoginTime": "2025-12-16T07:40:46.289Z",
-      "lastLoginTime": "2025-12-31T11:09:54.573Z",
-      "loginCount": 8
+      "lastLoginTime": "2026-02-09T09:35:44.123Z",
+      "loginCount": 9
     },
     "68EFCC15": {
       "machineCode": "68EF-CC15",
