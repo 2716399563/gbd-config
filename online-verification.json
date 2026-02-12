@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-12",
+  "lastUpdate": "2026-02-13",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -166,8 +166,8 @@
     "7E55455B": {
       "machineCode": "7E55-455B",
       "firstLoginTime": "2025-12-11T19:16:48.968Z",
-      "lastLoginTime": "2026-01-19T18:02:37.894Z",
-      "loginCount": 25
+      "lastLoginTime": "2026-02-13T00:26:52.266Z",
+      "loginCount": 26
     },
     "561A4D51": {
       "machineCode": "561A-4D51",
