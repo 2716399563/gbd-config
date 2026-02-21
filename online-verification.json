@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-20",
+  "lastUpdate": "2026-02-21",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -761,8 +761,8 @@
     "D20D5690": {
       "machineCode": "D20D-5690",
       "firstLoginTime": "2026-01-18T01:27:19.054Z",
-      "lastLoginTime": "2026-02-18T17:34:21.512Z",
-      "loginCount": 8
+      "lastLoginTime": "2026-02-21T11:08:41.163Z",
+      "loginCount": 9
     },
     "2EC0129E": {
       "machineCode": "2EC0-129E",
