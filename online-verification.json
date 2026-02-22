@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-21",
+  "lastUpdate": "2026-02-22",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -689,8 +689,8 @@
     "1C0C1CCC": {
       "machineCode": "1C0C-1CCC",
       "firstLoginTime": "2026-01-15T07:17:51.994Z",
-      "lastLoginTime": "2026-02-13T14:00:39.410Z",
-      "loginCount": 9
+      "lastLoginTime": "2026-02-22T16:05:04.031Z",
+      "loginCount": 10
     },
     "8A83244C": {
       "machineCode": "8A83-244C",
