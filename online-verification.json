@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-02-27",
+  "lastUpdate": "2026-02-28",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -143,8 +143,8 @@
     "B47031DE": {
       "machineCode": "B470-31DE",
       "firstLoginTime": "2025-12-11T01:15:03.651Z",
-      "lastLoginTime": "2026-01-09T15:12:21.455Z",
-      "loginCount": 13
+      "lastLoginTime": "2026-02-28T00:18:56.159Z",
+      "loginCount": 14
     },
     "è·åå¤±è´¥: æ æ³ç­å¾å¤çã": {
       "machineCode": "è·åå¤±è´¥: æ æ³ç­å¾å¤çã",
