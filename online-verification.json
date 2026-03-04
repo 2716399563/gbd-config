@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-03-03",
+  "lastUpdate": "2026-03-04",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -377,8 +377,8 @@
     "20155C66": {
       "machineCode": "2015-5C66",
       "firstLoginTime": "2025-12-23T20:36:30.275Z",
-      "lastLoginTime": "2026-01-25T20:12:13.131Z",
-      "loginCount": 4
+      "lastLoginTime": "2026-03-04T09:58:32.906Z",
+      "loginCount": 5
     },
     "D4DFF877": {
       "machineCode": "D4DF-F877",
