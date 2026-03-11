@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-03-10",
+  "lastUpdate": "2026-03-11",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -791,8 +791,8 @@
     "F0C295CF": {
       "machineCode": "F0C2-95CF",
       "firstLoginTime": "2026-01-18T22:05:23.222Z",
-      "lastLoginTime": "2026-01-27T14:56:44.451Z",
-      "loginCount": 4
+      "lastLoginTime": "2026-03-11T08:49:30.169Z",
+      "loginCount": 5
     },
     "F04F7F69": {
       "machineCode": "F04F-7F69",
