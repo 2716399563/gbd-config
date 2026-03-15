@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-03-15",
+  "lastUpdate": "2026-03-16",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -611,8 +611,8 @@
     "6AD2AF11": {
       "machineCode": "6AD2-AF11",
       "firstLoginTime": "2026-01-11T12:40:51.528Z",
-      "lastLoginTime": "2026-02-14T01:15:00.424Z",
-      "loginCount": 7
+      "lastLoginTime": "2026-03-16T02:02:00.225Z",
+      "loginCount": 8
     },
     "0C8ADF51": {
       "machineCode": "0C8A-DF51",
