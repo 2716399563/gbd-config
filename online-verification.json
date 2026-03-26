@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-03-25",
+  "lastUpdate": "2026-03-26",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -395,8 +395,8 @@
     "8C4729A4": {
       "machineCode": "8C47-29A4",
       "firstLoginTime": "2025-12-25T20:54:55.366Z",
-      "lastLoginTime": "2026-03-19T20:14:01.718Z",
-      "loginCount": 9
+      "lastLoginTime": "2026-03-26T20:50:06.752Z",
+      "loginCount": 10
     },
     "A8AA45ED": {
       "machineCode": "A8AA-45ED",
