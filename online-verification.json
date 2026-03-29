@@ -907,6 +907,12 @@
       "firstLoginTime": "2026-03-13T20:12:38.867Z",
       "lastLoginTime": "2026-03-15T09:56:27.971Z",
       "loginCount": 6
+    },
+    "E08F4425": {
+      "machineCode": "E08F-4425",
+      "firstLoginTime": "2026-03-29T21:56:51.883Z",
+      "lastLoginTime": "2026-03-29T21:56:51.883Z",
+      "loginCount": 1
     }
   }
 }
