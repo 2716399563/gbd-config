@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-04-06",
+  "lastUpdate": "2026-04-08",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -113,8 +113,8 @@
     "96243BE8": {
       "machineCode": "9624-3BE8",
       "firstLoginTime": "2025-12-10T20:39:55.651Z",
-      "lastLoginTime": "2026-03-30T21:30:18.731Z",
-      "loginCount": 7
+      "lastLoginTime": "2026-04-08T09:42:51.647Z",
+      "loginCount": 8
     },
     "225838EC": {
       "machineCode": "2258-38EC",
