@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-04-11",
+  "lastUpdate": "2026-04-12",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -137,8 +137,8 @@
     "40ED8053": {
       "machineCode": "40ED-8053",
       "firstLoginTime": "2025-12-10T21:45:31.262Z",
-      "lastLoginTime": "2026-02-25T10:59:45.105Z",
-      "loginCount": 15
+      "lastLoginTime": "2026-04-12T00:14:50.142Z",
+      "loginCount": 16
     },
     "B47031DE": {
       "machineCode": "B470-31DE",
