@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-04-22",
+  "lastUpdate": "2026-04-24",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -155,8 +155,8 @@
     "D43F3D39": {
       "machineCode": "D43F-3D39",
       "firstLoginTime": "2025-12-11T12:45:57.703Z",
-      "lastLoginTime": "2026-03-06T10:29:30.710Z",
-      "loginCount": 4
+      "lastLoginTime": "2026-04-24T22:30:24.740Z",
+      "loginCount": 5
     },
     "C2B9B42D": {
       "machineCode": "C2B9-B42D",
