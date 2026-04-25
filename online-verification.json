@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-04-24",
+  "lastUpdate": "2026-04-25",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -551,8 +551,8 @@
     "76F0CADB": {
       "machineCode": "76F0-CADB",
       "firstLoginTime": "2026-01-07T22:21:09.050Z",
-      "lastLoginTime": "2026-04-19T19:46:53.600Z",
-      "loginCount": 63
+      "lastLoginTime": "2026-04-25T09:12:14.469Z",
+      "loginCount": 64
     },
     "18C7E9A6": {
       "machineCode": "18C7-E9A6",
