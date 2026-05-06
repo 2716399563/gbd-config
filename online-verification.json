@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-05-05",
+  "lastUpdate": "2026-05-06",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -917,8 +917,8 @@
     "60779FC8": {
       "machineCode": "6077-9FC8",
       "firstLoginTime": "2026-05-04T16:20:04.653Z",
-      "lastLoginTime": "2026-05-04T16:20:04.653Z",
-      "loginCount": 1
+      "lastLoginTime": "2026-05-06T08:21:50.376Z",
+      "loginCount": 2
     }
   }
 }
