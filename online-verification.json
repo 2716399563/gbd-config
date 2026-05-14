@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-05-13",
+  "lastUpdate": "2026-05-14",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -467,8 +467,8 @@
     "2609A3DD": {
       "machineCode": "2609-A3DD",
       "firstLoginTime": "2025-12-30T16:47:37.462Z",
-      "lastLoginTime": "2026-05-13T18:22:14.920Z",
-      "loginCount": 69
+      "lastLoginTime": "2026-05-14T08:39:01.901Z",
+      "loginCount": 70
     },
     "5197FC2": {
       "machineCode": "-519-7FC2",
