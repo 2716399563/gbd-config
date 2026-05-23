@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-05-22",
+  "lastUpdate": "2026-05-23",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -599,8 +599,8 @@
     "68273D56": {
       "machineCode": "6827-3D56",
       "firstLoginTime": "2026-01-11T02:07:11.862Z",
-      "lastLoginTime": "2026-02-02T02:31:14.032Z",
-      "loginCount": 9
+      "lastLoginTime": "2026-05-23T08:05:07.759Z",
+      "loginCount": 10
     },
     "2A20808B": {
       "machineCode": "2A20-808B",
