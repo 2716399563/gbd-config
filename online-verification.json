@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-06-05",
+  "lastUpdate": "2026-06-07",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -659,8 +659,8 @@
     "FC5C3E13": {
       "machineCode": "FC5C-3E13",
       "firstLoginTime": "2026-01-13T21:51:43.370Z",
-      "lastLoginTime": "2026-05-09T22:04:49.744Z",
-      "loginCount": 35
+      "lastLoginTime": "2026-06-07T17:02:08.522Z",
+      "loginCount": 36
     },
     "74F1D0B3": {
       "machineCode": "74F1-D0B3",
