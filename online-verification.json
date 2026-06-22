@@ -919,6 +919,12 @@
       "firstLoginTime": "2026-05-04T16:20:04.653Z",
       "lastLoginTime": "2026-05-06T08:21:50.376Z",
       "loginCount": 2
+    },
+    "937D3B06": {
+      "machineCode": "937D-3B06",
+      "firstLoginTime": "2026-06-22T16:35:08.951Z",
+      "lastLoginTime": "2026-06-22T16:35:08.951Z",
+      "loginCount": 1
     }
   }
 }
