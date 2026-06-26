@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-06-24",
+  "lastUpdate": "2026-06-26",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -925,6 +925,12 @@
       "firstLoginTime": "2026-06-22T16:35:08.951Z",
       "lastLoginTime": "2026-06-24T21:43:13.169Z",
       "loginCount": 4
+    },
+    "获取失败: 无法等待处理。": {
+      "machineCode": "获取失败: 无法等待处理。",
+      "firstLoginTime": "2026-06-26T10:51:49.852Z",
+      "lastLoginTime": "2026-06-26T10:51:49.852Z",
+      "loginCount": 1
     }
   }
 }
