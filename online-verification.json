@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-06-30",
+  "lastUpdate": "2026-07-01",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -923,8 +923,8 @@
     "937D3B06": {
       "machineCode": "937D-3B06",
       "firstLoginTime": "2026-06-22T16:35:08.951Z",
-      "lastLoginTime": "2026-06-26T16:41:40.237Z",
-      "loginCount": 5
+      "lastLoginTime": "2026-07-01T13:55:02.904Z",
+      "loginCount": 6
     },
     "获取失败: 无法等待处理。": {
       "machineCode": "获取失败: 无法等待处理。",
