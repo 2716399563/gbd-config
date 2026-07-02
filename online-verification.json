@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-07-01",
+  "lastUpdate": "2026-07-02",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -413,8 +413,8 @@
     "FE35EE00": {
       "machineCode": "FE35-EE00",
       "firstLoginTime": "2025-12-26T17:36:33.247Z",
-      "lastLoginTime": "2026-03-16T20:52:01.304Z",
-      "loginCount": 35
+      "lastLoginTime": "2026-07-02T13:23:18.010Z",
+      "loginCount": 36
     },
     "6845FC45": {
       "machineCode": "6845-FC45",
