@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-07-02",
+  "lastUpdate": "2026-07-03",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -437,8 +437,8 @@
     "0EDBAA26": {
       "machineCode": "0EDB-AA26",
       "firstLoginTime": "2025-12-28T17:00:24.052Z",
-      "lastLoginTime": "2026-07-02T22:10:48.105Z",
-      "loginCount": 38
+      "lastLoginTime": "2026-07-03T17:13:39.602Z",
+      "loginCount": 39
     },
     "8E5A88DF": {
       "machineCode": "8E5A-88DF",
