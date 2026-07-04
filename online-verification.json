@@ -931,6 +931,12 @@
       "firstLoginTime": "2026-06-26T10:51:49.852Z",
       "lastLoginTime": "2026-06-26T10:51:49.852Z",
       "loginCount": 1
+    },
+    "944C58EE": {
+      "machineCode": "944C-58EE",
+      "firstLoginTime": "2026-07-04T21:26:57.533Z",
+      "lastLoginTime": "2026-07-04T21:26:57.533Z",
+      "loginCount": 1
     }
   }
 }
