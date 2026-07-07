@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-07-06",
+  "lastUpdate": "2026-07-07",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -527,8 +527,8 @@
     "002B0E60": {
       "machineCode": "002B-0E60",
       "firstLoginTime": "2026-01-06T19:11:44.425Z",
-      "lastLoginTime": "2026-04-11T18:50:46.035Z",
-      "loginCount": 3
+      "lastLoginTime": "2026-07-07T23:45:01.472Z",
+      "loginCount": 4
     },
     "4CCF0996": {
       "machineCode": "4CCF-0996",
