@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-07-25",
+  "lastUpdate": "2026-08-02",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -935,8 +935,8 @@
     "944C58EE": {
       "machineCode": "944C-58EE",
       "firstLoginTime": "2026-07-04T21:26:57.533Z",
-      "lastLoginTime": "2026-07-04T22:47:46.419Z",
-      "loginCount": 4
+      "lastLoginTime": "2026-08-02T00:56:26.998Z",
+      "loginCount": 5
     }
   }
 }
