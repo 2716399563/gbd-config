@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdate": "2026-08-07",
+  "lastUpdate": "2026-08-08",
   "config": {
     "enabled": true,
     "offlineMode": false,
@@ -575,8 +575,8 @@
     "425893EE": {
       "machineCode": "4258-93EE",
       "firstLoginTime": "2026-01-08T21:20:45.088Z",
-      "lastLoginTime": "2026-08-05T09:01:50.820Z",
-      "loginCount": 13
+      "lastLoginTime": "2026-08-08T09:31:13.721Z",
+      "loginCount": 14
     },
     "485C4F8F": {
       "machineCode": "485C-4F8F",
