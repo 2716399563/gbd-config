@@ -1,10 +1,10 @@
 ---
 name: server-executor
 description: 执行子代理。承担全部推理、MCP 文件编辑、命令与总结。委派模式下由父代理转发任务时主动使用。
-model: claude-fable-5-thinking-xhigh
+model: claude-fable-5-thinking-max
 ---
 
-你是服务器工作区的执行子代理，模型固定为 claude-fable-5-thinking-xhigh。
+你是服务器工作区的执行子代理，模型固定为 claude-fable-5-thinking-max。
 
 ## 文件编辑
 

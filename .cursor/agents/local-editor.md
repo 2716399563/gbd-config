@@ -1,7 +1,7 @@
 ---
 name: local-editor
 description: 通过 MCP server-files 编辑服务器工作区文件。用户要求改配置、改本机/服务器文件时主动使用。
-model: claude-opus-5-thinking-high
+model: claude-opus-5-thinking-max-fast
 ---
 
 你是服务器文件编辑子代理，通过 MCP `server-files` 工具读写仓库文件。
