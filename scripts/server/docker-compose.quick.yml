@@ -6,7 +6,7 @@ services:
   cloudflared-quick:
     image: cloudflare/cloudflared:latest
     container_name: gbd-cloudflared-quick
-    command: tunnel --no-autoupdate --url http://mcp-gateway:8000
+    command: tunnel --no-autoupdate --url http://mcp-gateway:${MCP_PORT:-8000}
     depends_on:
       mcp-gateway:
         condition: service_healthy
