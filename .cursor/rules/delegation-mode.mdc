@@ -26,7 +26,7 @@ alwaysApply: true
 
 - **模型**：`claude-fable-5-thinking-xhigh`（通过 `.cursor/agents/server-executor.md` 固定）
 - **启动**：Task 工具委派 `server-executor`，或通过 MCP 编辑服务器文件
-- **文件路径**：MCP `server-files` → 服务器 `/workspace`（Windows 通过 Git 同步）
+- **文件路径**：MCP `server-files` → 服务器 `/workspace`（= `/opt/amd-radeon-register`）
 
 ## 核心原则
 
