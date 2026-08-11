@@ -23,8 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: cursor/cloudflare-mcp-setup-fc43
 
       - name: Validate secrets
         env:
@@ -68,17 +66,18 @@ jobs:
           ssh "${SSH_BASE[@]}" "$TARGET" 'command -v docker >/dev/null 2>&1 || (curl -fsSL https://get.docker.com | sh)'
 
           ssh "${SSH_BASE[@]}" "$TARGET" 'mkdir -p /tmp/gbd-mcp-server-scripts'
-          scp "${SSH_BASE[@]}" scripts/server/docker-compose.yml scripts/server/docker-compose.quick.yml scripts/server/.env.example "$TARGET:/tmp/gbd-mcp-server-scripts/"
+          scp "${SSH_BASE[@]}" scripts/server/docker-compose.yml scripts/server/docker-compose.quick.yml scripts/server/.env.example scripts/server/show-mcp-url.sh "$TARGET:/tmp/gbd-mcp-server-scripts/"
 
-          ssh "${SSH_BASE[@]}" "$TARGET" bash -s <<'REMOTE'
+          TOKEN="${CLOUDFLARED_TUNNEL_TOKEN:-}"
+          ssh "${SSH_BASE[@]}" "$TARGET" bash -s <<REMOTE
           set -euo pipefail
           REMOTE_PATH="/opt/amd-radeon-register"
           cd /tmp/gbd-mcp-server-scripts
-          mkdir -p "$REMOTE_PATH"
+          mkdir -p "\$REMOTE_PATH"
           cp -n .env.example .env 2>/dev/null || cp .env.example .env
-          sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=$REMOTE_PATH|" .env
-          if [ -n "${CLOUDFLARED_TUNNEL_TOKEN:-}" ]; then
-            sed -i "s|^CLOUDFLARED_TUNNEL_TOKEN=.*|CLOUDFLARED_TUNNEL_TOKEN=$CLOUDFLARED_TUNNEL_TOKEN|" .env
+          sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=\$REMOTE_PATH|" .env
+          if [ -n "${TOKEN}" ]; then
+            sed -i "s|^CLOUDFLARED_TUNNEL_TOKEN=.*|CLOUDFLARED_TUNNEL_TOKEN=${TOKEN}|" .env
           fi
           docker compose --env-file .env up -d mcp-gateway
           if grep -q '^CLOUDFLARED_TUNNEL_TOKEN=.\+' .env; then

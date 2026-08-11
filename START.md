@@ -1,16 +1,26 @@
-## 让我帮你完成（GitHub Actions）
+## 让我帮你完成（三选一，任选最快的）
 
-若不想在 Cursor 填 Secret，可在 **GitHub 仓库 Settings → Secrets and variables → Actions** 添加：
+### 方式 1：Windows 一键脚本（推荐，约 3 分钟）
 
-| Secret | 值 |
-|--------|-----|
-| `SSH_PRIVATE_KEY` | huangshibo.pem **全文** |
-| `SERVER_HOST` | `20.255.73.137`（可选，有默认值） |
-| `SSH_USER` | `azureuser`（可选） |
+双击或在 PowerShell 运行：
 
-然后：**Actions** → **Deploy MCP stack to Azure** → **Run workflow**。
+```powershell
+git clone https://github.com/2716399563/gbd-config.git C:\dev\gbd-config
+powershell -ExecutionPolicy Bypass -File C:\dev\gbd-config\scripts\windows\ONE-CLICK-DEPLOY.ps1
+```
 
-或告诉我「Secrets 已填到 GitHub」，我会触发 workflow。
+### 方式 2：GitHub Actions（填一次 Secret，以后可重复部署）
+
+1. 打开 https://github.com/2716399563/gbd-config/settings/secrets/actions
+2. 新建 `SSH_PRIVATE_KEY` = huangshibo.pem 全文
+3. 可选：`SERVER_HOST` = `20.255.73.137`，`SSH_USER` = `azureuser`
+4. Actions → **Deploy MCP stack to Azure** → **Run workflow**
+
+### 方式 3：Azure 门户（不用 PEM）
+
+见下方「第 1 步」curl 命令。
+
+---
 
 ## 按推荐路径部署（约 5 分钟）
 
