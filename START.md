@@ -1,4 +1,18 @@
-# 按推荐路径部署（约 5 分钟）
+## 让我帮你完成（GitHub Actions）
+
+若不想在 Cursor 填 Secret，可在 **GitHub 仓库 Settings → Secrets and variables → Actions** 添加：
+
+| Secret | 值 |
+|--------|-----|
+| `SSH_PRIVATE_KEY` | huangshibo.pem **全文** |
+| `SERVER_HOST` | `20.255.73.137`（可选，有默认值） |
+| `SSH_USER` | `azureuser`（可选） |
+
+然后：**Actions** → **Deploy MCP stack to Azure** → **Run workflow**。
+
+或告诉我「Secrets 已填到 GitHub」，我会触发 workflow。
+
+## 按推荐路径部署（约 5 分钟）
 
 服务器：`20.255.73.137`（Azure Ubuntu 22.04）
 

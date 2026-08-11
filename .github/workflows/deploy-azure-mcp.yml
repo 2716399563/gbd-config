@@ -1,0 +1,104 @@
+name: Deploy MCP stack to Azure
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_project_sync:
+        description: 'Only deploy MCP/tunnel (skip gbd-config sync to workspace)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+concurrency:
+  group: deploy-azure-mcp
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: cursor/cloudflare-mcp-setup-fc43
+
+      - name: Validate secrets
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        run: |
+          if [ -z "$SSH_PRIVATE_KEY" ]; then
+            echo "::error::GitHub Secret SSH_PRIVATE_KEY 未配置。仓库 Settings → Secrets → Actions 添加 huangshibo.pem 全文"
+            exit 1
+          fi
+          if [ -z "$SERVER_HOST" ]; then
+            echo "SERVER_HOST 未配置，使用默认 20.255.73.137"
+          fi
+
+      - name: Deploy via SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          CLOUDFLARED_TUNNEL_TOKEN: ${{ secrets.CLOUDFLARED_TUNNEL_TOKEN }}
+          SKIP_SYNC: ${{ inputs.skip_project_sync }}
+        run: |
+          set -euo pipefail
+          export SERVER_HOST="${SERVER_HOST:-20.255.73.137}"
+          export SSH_USER="${SSH_USER:-azureuser}"
+          export REMOTE_PATH="/opt/amd-radeon-register"
+
+          KEY_FILE="$(mktemp)"
+          printf '%s\n' "$SSH_PRIVATE_KEY" > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+
+          SSH_BASE=(-i "$KEY_FILE" -o StrictHostKeyChecking=accept-new -o ConnectTimeout=20)
+          TARGET="${SSH_USER}@${SERVER_HOST}"
+
+          ssh "${SSH_BASE[@]}" "$TARGET" 'echo ok && uname -a' || {
+            export SSH_USER=root
+            TARGET="${SSH_USER}@${SERVER_HOST}"
+            ssh "${SSH_BASE[@]}" "$TARGET" 'echo ok && uname -a'
+          }
+
+          ssh "${SSH_BASE[@]}" "$TARGET" 'command -v docker >/dev/null 2>&1 || (curl -fsSL https://get.docker.com | sh)'
+
+          ssh "${SSH_BASE[@]}" "$TARGET" 'mkdir -p /tmp/gbd-mcp-server-scripts'
+          scp "${SSH_BASE[@]}" scripts/server/docker-compose.yml scripts/server/docker-compose.quick.yml scripts/server/.env.example "$TARGET:/tmp/gbd-mcp-server-scripts/"
+
+          ssh "${SSH_BASE[@]}" "$TARGET" bash -s <<'REMOTE'
+          set -euo pipefail
+          REMOTE_PATH="/opt/amd-radeon-register"
+          cd /tmp/gbd-mcp-server-scripts
+          mkdir -p "$REMOTE_PATH"
+          cp -n .env.example .env 2>/dev/null || cp .env.example .env
+          sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=$REMOTE_PATH|" .env
+          if [ -n "${CLOUDFLARED_TUNNEL_TOKEN:-}" ]; then
+            sed -i "s|^CLOUDFLARED_TUNNEL_TOKEN=.*|CLOUDFLARED_TUNNEL_TOKEN=$CLOUDFLARED_TUNNEL_TOKEN|" .env
+          fi
+          docker compose --env-file .env up -d mcp-gateway
+          if grep -q '^CLOUDFLARED_TUNNEL_TOKEN=.\+' .env; then
+            docker compose --env-file .env up -d cloudflared
+          else
+            docker compose -f docker-compose.yml -f docker-compose.quick.yml --env-file .env up -d cloudflared-quick
+            sleep 10
+            docker logs gbd-cloudflared-quick 2>&1 | grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' | head -1 || true
+          fi
+          docker compose ps
+          REMOTE
+
+          if [ "${SKIP_SYNC}" != "true" ]; then
+            tar -cf - --exclude=.git . | ssh "${SSH_BASE[@]}" "$TARGET" \
+              "mkdir -p ${REMOTE_PATH}/gbd-config && cd ${REMOTE_PATH}/gbd-config && tar -xf -"
+          fi
+
+          echo "==> Fetch MCP public URL from server..."
+          ssh "${SSH_BASE[@]}" "$TARGET" 'bash /tmp/gbd-mcp-server-scripts/show-mcp-url.sh 2>/dev/null || docker logs gbd-cloudflared-quick 2>&1 | tail -20'
+
+      - name: Summary
+        run: |
+          echo "部署完成。若上方日志含 trycloudflare.com，将其 + /mcp 填入 .cursor/mcp.json"
