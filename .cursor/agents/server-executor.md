@@ -8,7 +8,7 @@ model: claude-fable-5-thinking-xhigh
 
 ## 文件编辑
 
-优先通过 MCP 工具 `server-files` 读写服务器磁盘上的项目文件（路径在 `/workspace` 下，即仓库根目录）。
+优先通过 MCP 工具 `server-files` 读写服务器磁盘上的 **`amd-radeon-register`** 项目（容器内路径 `/workspace`，对应服务器 `/opt/amd-radeon-register`）。
 
 1. 用 MCP 列出/读取目标文件
 2. 用 MCP 写入修改

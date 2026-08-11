@@ -1,6 +1,8 @@
 # gbd-config
 
-Cursor Cloud Agent 通过**服务器**上的 MCP + Cloudflare Tunnel 读写工作区文件；Windows 本机用 Git 同步。
+Cursor Cloud Agent 通过**服务器**上的 MCP + Cloudflare Tunnel 读写 **`amd-radeon-register`** 项目文件。
+
+**Windows 只需上传一次**（用你的 `huangshibo.pem`），之后 Cloud Agent 直接改服务器磁盘上的文件。
 
 ## 架构
 
@@ -28,13 +30,28 @@ Windows (Git pull/push)  ←→  GitHub  ←→  Cursor Cloud Agent
 3. **Access** → **Applications** → 为该 hostname 创建 Self-hosted 应用。
 4. **Access** → **Service Auth** → 创建 **Service Token**，记下 Client ID 和 Secret。
 
-### 2. 在服务器部署
+### 2. 从 Windows 一键上传并部署（推荐）
+
+在 PowerShell 中（已安装 OpenSSH）：
+
+```powershell
+cd C:\Users\Administrator\Desktop\amd-radeon\amd-radeon-register
+git clone https://github.com/2716399563/gbd-config.git C:\dev\gbd-config
+cd C:\dev\gbd-config
+.\scripts\windows\upload-and-deploy.ps1 -ServerHost <你的服务器IP>
+```
+
+默认 PEM：`C:\Users\Administrator\Desktop\amd-radeon\amd-radeon-register\huangshibo.pem`
+
+脚本会把本机 `amd-radeon-register` 上传到服务器 `/opt/amd-radeon-register`，并启动 MCP + cloudflared。
+
+### 2b. 或仅在 Linux 服务器上部署
 
 ```bash
 git clone https://github.com/2716399563/gbd-config.git
 cd gbd-config
 cp scripts/server/.env.example scripts/server/.env
-# 编辑 .env：填入 CLOUDFLARED_TUNNEL_TOKEN、WORKSPACE_PATH
+# WORKSPACE_PATH 默认 /opt/amd-radeon-register
 chmod +x scripts/server/setup.sh
 ./scripts/server/setup.sh
 ```
