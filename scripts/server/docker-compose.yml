@@ -26,12 +26,15 @@ services:
           --port ${MCP_PORT:-8000} \
           --host 0.0.0.0 \
           --outputTransport streamableHttp \
-          --streamableHttpPath /mcp
+          --streamableHttpPath /mcp \
+          --stateful \
+          --sessionTimeout 600000
     ports:
       - "127.0.0.1:${MCP_PORT:-8000}:${MCP_PORT:-8000}"
     restart: unless-stopped
-    # 兜底：即使再出现进程风暴，也只影响本容器，不会拖垮宿主机
-    mem_limit: 768m
+    # 兜底：即使再出现进程风暴，也只影响本容器，不会拖垮宿主机。
+    # 宿主机总内存仅 891MB，上限必须给 mimic-dlp 和系统留出余量。
+    mem_limit: 512m
     cpus: 1.0
     healthcheck:
       test: ["CMD-SHELL", "node -e \"require('http').get('http://127.0.0.1:${MCP_PORT:-8000}/mcp',r=>process.exit(r.statusCode<500?0:1)).on('error',()=>process.exit(1))\""]
