@@ -1,5 +1,5 @@
 # MCP 文件服务 + Cloudflare Tunnel connector
-# 在 scripts/server 目录执行: docker compose --env-file .env up -d
+# 用法: docker compose --env-file .env up -d
 
 services:
   mcp-gateway:
@@ -8,14 +8,21 @@ services:
     working_dir: /workspace
     volumes:
       - ${WORKSPACE_PATH}:/workspace:rw
+    # 关键：预装 filesystem server 并直接调用其可执行文件。
+    # 早期写法是 --stdio "npx -y @modelcontextprotocol/server-filesystem ..."，
+    # stateless 模式下每个请求都会重跑一次 npx（解析+下载+起 node），
+    # 几个并发请求就能把整台 VM 的 CPU/内存吃光，导致 sshd 和 nginx 一起僵死。
     command:
-      - sh
+      - bash
       - -c
       - |
-        set -euo pipefail
-        npm install -g supergateway
+        set -eu
+        npm install -g supergateway @modelcontextprotocol/server-filesystem
+        BIN="$$(command -v mcp-server-filesystem || true)"
+        if [ -z "$$BIN" ]; then BIN="npx -y @modelcontextprotocol/server-filesystem"; fi
+        echo "using stdio: $$BIN /workspace"
         exec supergateway \
-          --stdio "npx -y @modelcontextprotocol/server-filesystem /workspace" \
+          --stdio "$$BIN /workspace" \
           --port ${MCP_PORT:-8000} \
           --host 0.0.0.0 \
           --outputTransport streamableHttp \
@@ -23,12 +30,15 @@ services:
     ports:
       - "127.0.0.1:${MCP_PORT:-8000}:${MCP_PORT:-8000}"
     restart: unless-stopped
+    # 兜底：即使再出现进程风暴，也只影响本容器，不会拖垮宿主机
+    mem_limit: 768m
+    cpus: 1.0
     healthcheck:
       test: ["CMD-SHELL", "node -e \"require('http').get('http://127.0.0.1:${MCP_PORT:-8000}/mcp',r=>process.exit(r.statusCode<500?0:1)).on('error',()=>process.exit(1))\""]
       interval: 30s
       timeout: 5s
       retries: 3
-      start_period: 60s
+      start_period: 90s
 
   cloudflared:
     image: cloudflare/cloudflared:latest
