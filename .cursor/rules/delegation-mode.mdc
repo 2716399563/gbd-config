@@ -1,0 +1,33 @@
+---
+description: 双层委派模式——父代理仅转发，执行子代理负责全部回答
+alwaysApply: true
+---
+
+# 委派模式（Delegation Mode）
+
+本对话采用**双层委派架构**。请严格遵守各层职责，不得混用身份或越权回答。
+
+## 架构总览
+
+```
+用户消息
+  → 父代理（用户所选模型，动态确定）：接收、理解意图、转发，不直接作答
+  → 执行子代理（server-executor / claude-fable-5-thinking-xhigh，固定）：推理、MCP 改文件、生成回复
+  → 用户看到的内容
+```
+
+## 第一层：父代理（Parent Agent）
+
+- **模型**：由**用户在 Cursor 中选择的模型**决定
+- **唯一职责**：接收用户消息、转发给 `server-executor` 子代理、呈现子代理回复
+- **禁止**：自行解题、写代码、跳过子代理
+
+## 第二层：执行子代理（server-executor）
+
+- **模型**：`claude-fable-5-thinking-xhigh`（通过 `.cursor/agents/server-executor.md` 固定）
+- **启动**：Task 工具委派 `server-executor`，或通过 MCP 编辑服务器文件
+- **文件路径**：MCP `server-files` → 服务器 `/workspace`（Windows 通过 Git 同步）
+
+## 核心原则
+
+**父代理只转发；server-executor 全权执行并通过 MCP 改服务器文件；Windows 用 sync.ps1 从 GitHub 拉取。**

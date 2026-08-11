@@ -1,0 +1,50 @@
+# MCP 文件服务 + Cloudflare Tunnel connector
+# 在 scripts/server 目录执行: docker compose --env-file .env up -d
+
+services:
+  mcp-gateway:
+    image: node:22-bookworm-slim
+    container_name: gbd-mcp-gateway
+    working_dir: /workspace
+    volumes:
+      - ${WORKSPACE_PATH}:/workspace:rw
+    command:
+      - sh
+      - -c
+      - |
+        set -euo pipefail
+        npm install -g supergateway
+        exec supergateway \
+          --stdio "npx -y @modelcontextprotocol/server-filesystem /workspace" \
+          --port ${MCP_PORT:-8000} \
+          --host 0.0.0.0 \
+          --outputTransport streamableHttp \
+          --streamableHttpPath /mcp
+    ports:
+      - "127.0.0.1:${MCP_PORT:-8000}:${MCP_PORT:-8000}"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://127.0.0.1:${MCP_PORT:-8000}/mcp',r=>process.exit(r.statusCode<500?0:1)).on('error',()=>process.exit(1))\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: gbd-cloudflared
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARED_TUNNEL_TOKEN}
+    depends_on:
+      mcp-gateway:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      default:
+        aliases:
+          - cloudflared
+
+networks:
+  default:
+    name: gbd-mcp-net

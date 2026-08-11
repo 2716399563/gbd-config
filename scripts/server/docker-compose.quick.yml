@@ -1,0 +1,13 @@
+# 临时快速隧道（无需 Cloudflare Zero Trust Token）
+# 用法: docker compose -f docker-compose.yml -f docker-compose.quick.yml --env-file .env up -d
+# 查看公网 URL: docker logs gbd-cloudflared-quick 2>&1 | grep trycloudflare
+
+services:
+  cloudflared-quick:
+    image: cloudflare/cloudflared:latest
+    container_name: gbd-cloudflared-quick
+    command: tunnel --no-autoupdate --url http://mcp-gateway:8000
+    depends_on:
+      mcp-gateway:
+        condition: service_healthy
+    restart: unless-stopped
