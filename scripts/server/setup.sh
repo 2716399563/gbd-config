@@ -38,9 +38,19 @@ if ! command -v docker >/dev/null 2>&1; then
   exit 1
 fi
 
-echo "==> 启动 MCP 网关 + cloudflared ..."
+echo "==> 启动 MCP 网关..."
 cd "${SCRIPT_DIR}"
-docker compose --env-file .env up -d --build
+docker compose --env-file .env up -d mcp-gateway
+
+if grep -q '^CLOUDFLARED_TUNNEL_TOKEN=.\+' .env; then
+  echo "==> 启动 Cloudflare Tunnel (token)..."
+  docker compose --env-file .env up -d cloudflared
+else
+  echo "==> 无 Token，启动 quick tunnel（测试用）..."
+  docker compose -f docker-compose.yml -f docker-compose.quick.yml --env-file .env up -d cloudflared-quick
+  sleep 6
+  docker logs gbd-cloudflared-quick 2>&1 | grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' | head -1 || true
+fi
 
 echo ""
 echo "==> 部署完成"

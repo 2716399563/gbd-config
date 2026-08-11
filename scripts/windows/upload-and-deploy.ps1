@@ -7,10 +7,9 @@
 #   项目: C:\Users\Administrator\Desktop\amd-radeon\amd-radeon-register
 
 param(
-    [Parameter(Mandatory = $true)]
-    [string]$ServerHost,
+    [string]$ServerHost = "20.255.73.137",
 
-    [string]$SshUser = "root",
+    [string]$SshUser = "azureuser",
 
     [string]$PemPath = "C:\Users\Administrator\Desktop\amd-radeon\amd-radeon-register\huangshibo.pem",
 
@@ -63,10 +62,13 @@ WORKSPACE_PATH=$RemotePath
 sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=$RemotePath|" /tmp/gbd-mcp-server-scripts/.env
 cd /tmp/gbd-mcp-server-scripts
 if grep -q '^CLOUDFLARED_TUNNEL_TOKEN=.\+' .env; then
-  docker compose --env-file .env up -d
+  docker compose --env-file .env up -d cloudflared
   docker compose ps
 else
-  echo 'WARN: CLOUDFLARED_TUNNEL_TOKEN 为空，已跳过 docker compose up'
+  echo 'WARN: CLOUDFLARED_TUNNEL_TOKEN 为空，启动 quick tunnel...'
+  docker compose -f docker-compose.yml -f docker-compose.quick.yml --env-file .env up -d cloudflared-quick
+  sleep 6
+  docker logs gbd-cloudflared-quick 2>&1 | grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com' | head -1 || true
 fi
 "@
 
