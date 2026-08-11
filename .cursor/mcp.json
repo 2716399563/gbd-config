@@ -1,7 +1,10 @@
 {
   "mcpServers": {
     "server-files": {
-      "url": "https://physics-architect-hockey-refrigerator.trycloudflare.com/mcp"
+      "url": "https://20-255-73-137.sslip.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCP_KEY}"
+      }
     }
   }
 }
