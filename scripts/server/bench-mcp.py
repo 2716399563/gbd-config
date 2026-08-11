@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import json, time, statistics, urllib.request
+import json, os, time, statistics, urllib.request
 
-AUTH = "Bearer mcp-hsb-20260811-k7x9"
+AUTH = "Bearer " + os.environ.get("MCP_KEY", "REPLACE_WITH_YOUR_KEY")
 INIT = json.dumps({
     "jsonrpc": "2.0", "id": 1, "method": "initialize",
     "params": {

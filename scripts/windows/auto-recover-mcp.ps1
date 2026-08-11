@@ -1,4 +1,4 @@
-# 自动重试 SSH 恢复 MCP（服务器 sshd/MCP 卡住时运行）
+# Auto-retry SSH recovery for stuck MCP gateway
 $ErrorActionPreference = "Continue"
 $PemPath = "C:\Users\Administrator\Desktop\amd-radeon\amd-radeon-register\huangshibo.pem"
 $Server = "huangshibo@20.255.73.137"
@@ -15,37 +15,38 @@ echo "=== nginx bench ==="
 for i in 1 2 3 4 5; do
   curl -sS -m 8 -o /dev/null -w "nginx#$i %{http_code} %{time_total}s\n" \
     -X POST http://127.0.0.1/mcp \
-    -H "Authorization: Bearer mcp-hsb-20260811-k7x9" \
+    -H "Authorization: Bearer REPLACE_WITH_YOUR_KEY" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json, text/event-stream" \
     -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"bench","version":"1.0"}}}' || echo "nginx#$i FAILED"
 done
 '@
 
-Write-Host "开始自动重试 SSH 恢复 (最多 $MaxAttempts 次)..." -ForegroundColor Cyan
+Write-Host "Auto-recover: retrying SSH up to $MaxAttempts times..." -ForegroundColor Cyan
 for ($i = 1; $i -le $MaxAttempts; $i++) {
-    Write-Host "[$(Get-Date -Format HH:mm:ss)] 尝试 $i/$MaxAttempts ..."
-    $test = ssh -i $PemPath -o ConnectTimeout=15 -o BatchMode=yes $Server "echo ok" 2>&1
+    Write-Host "[$(Get-Date -Format HH:mm:ss)] attempt $i/$MaxAttempts"
+    $null = ssh -i $PemPath -o ConnectTimeout=15 -o BatchMode=yes $Server "echo ok" 2>&1
     if ($LASTEXITCODE -eq 0) {
-        Write-Host "SSH 已恢复，正在重启 MCP..." -ForegroundColor Green
-        $RecoverCmd | ssh -i $PemPath $Server "bash -s"
-        Write-Host ""
-        Write-Host "=== Windows 公网测速 ===" -ForegroundColor Cyan
+        Write-Host "SSH OK - restarting MCP..." -ForegroundColor Green
+        ($RecoverCmd -replace "`r`n", "`n") | ssh -i $PemPath $Server "bash -s"
+        Write-Host "Windows public benchmark..." -ForegroundColor Cyan
         $body = '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"bench","version":"1.0"}}}'
         Set-Content -Path "$env:TEMP\mcp-init.json" -Value $body -NoNewline
-        1..5 | ForEach-Object {
-            curl.exe -sS -m 10 -o NUL -w "%{time_total}`n" -X POST "http://20.255.73.137/mcp" `
-                -H "Authorization: Bearer mcp-hsb-20260811-k7x9" `
+        $ms = 1..5 | ForEach-Object {
+            curl.exe -sS -m 10 -o NUL -w "%{time_total}" -X POST "http://20.255.73.137/mcp" `
+                -H "Authorization: Bearer REPLACE_WITH_YOUR_KEY" `
                 -H "Content-Type: application/json" `
                 -H "Accept: application/json, text/event-stream" `
                 --data-binary "@$env:TEMP\mcp-init.json"
-        } | ForEach-Object { [double]$_ * 1000 } | Measure-Object -Minimum -Maximum -Average | ForEach-Object {
-            Write-Host ("公网 x5: min={0:F0}ms avg={1:F0}ms max={2:F0}ms" -f $_.Minimum, $_.Average, $_.Maximum)
+        } | ForEach-Object { [double]$_ * 1000 }
+        if ($ms.Count -gt 0) {
+            $sorted = $ms | Sort-Object
+            Write-Host ("public x5: min={0}ms avg={1}ms max={2}ms" -f $sorted[0], [math]::Round(($ms | Measure-Object -Average).Average,0), $sorted[-1])
         }
-        Write-Host "完成！请重启 Cursor 刷新 MCP。" -ForegroundColor Green
+        Write-Host "Done. Restart Cursor to refresh MCP." -ForegroundColor Green
         exit 0
     }
     Start-Sleep -Seconds 20
 }
-Write-Host "SSH 仍不可用。请在 Azure 门户运行 recover-and-bench.sh" -ForegroundColor Red
+Write-Host "SSH still down. Run recover-and-bench.sh in Azure Portal." -ForegroundColor Red
 exit 1

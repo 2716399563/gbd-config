@@ -1,6 +1,7 @@
 #!/bin/bash
 # Azure 门户 → 虚拟机 → 运行命令 → RunShellScript 粘贴运行
 set -eu
+MCP_KEY="${MCP_KEY:-REPLACE_WITH_YOUR_KEY}"
 
 echo "==> restart ssh + mcp"
 sudo systemctl restart ssh 2>/dev/null || sudo systemctl restart sshd
@@ -23,7 +24,7 @@ echo "==> benchmark nginx /mcp (5x)"
 for i in 1 2 3 4 5; do
   curl -sS -m 8 -o /dev/null -w "nginx#$i %{http_code} %{time_total}s\n" \
     -X POST http://127.0.0.1/mcp \
-    -H "Authorization: Bearer mcp-hsb-20260811-k7x9" \
+    -H "Authorization: Bearer ${MCP_KEY}" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json, text/event-stream" \
     -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"bench","version":"1.0"}}}' || echo "nginx#$i FAILED"
