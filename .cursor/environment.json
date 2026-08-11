@@ -1,0 +1,5 @@
+{
+  "name": "gbd-config cloud",
+  "install": "echo 'Cloud agent ready'",
+  "repositoryDependencies": []
+}
