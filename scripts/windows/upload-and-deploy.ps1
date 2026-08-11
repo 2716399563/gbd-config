@@ -43,7 +43,8 @@ $remoteCmd = "mkdir -p $RemotePath && cd $RemotePath && tar -xf -"
 
 Write-Host "==> 上传服务器部署脚本 ..." -ForegroundColor Cyan
 $RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-Invoke-Expression "$scp -r `"$RepoRoot\scripts\server`" ${SshUser}@${ServerHost}:/tmp/gbd-mcp-server-scripts"
+Invoke-Expression "$ssh 'rm -rf /tmp/gbd-mcp-server-scripts && mkdir -p /tmp/gbd-mcp-server-scripts'"
+Invoke-Expression "$scp `"$RepoRoot\scripts\server\docker-compose.yml`" `"$RepoRoot\scripts\server\docker-compose.quick.yml`" `"$RepoRoot\scripts\server\.env.example`" ${SshUser}@${ServerHost}:/tmp/gbd-mcp-server-scripts/"
 
 Write-Host "==> 远程安装 Docker（若未装）并启动 MCP ..." -ForegroundColor Green
 $remoteSetup = @"
@@ -52,15 +53,11 @@ if ! command -v docker >/dev/null 2>&1; then
   curl -fsSL https://get.docker.com | sh
   systemctl enable --now docker 2>/dev/null || true
 fi
-mkdir -p /tmp/gbd-mcp-server-scripts
-if [ ! -f /tmp/gbd-mcp-server-scripts/.env ]; then
-  cp /tmp/gbd-mcp-server-scripts/.env.example /tmp/gbd-mcp-server-scripts/.env
-  echo '请在服务器编辑 /tmp/gbd-mcp-server-scripts/.env 填入 CLOUDFLARED_TUNNEL_TOKEN 后执行:'
-  echo '  cd /tmp/gbd-mcp-server-scripts && docker compose --env-file .env up -d'
-fi
-WORKSPACE_PATH=$RemotePath
-sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=$RemotePath|" /tmp/gbd-mcp-server-scripts/.env
+mkdir -p /tmp/gbd-mcp-server-scripts $RemotePath
 cd /tmp/gbd-mcp-server-scripts
+cp -n .env.example .env 2>/dev/null || cp .env.example .env
+sed -i "s|^WORKSPACE_PATH=.*|WORKSPACE_PATH=$RemotePath|" .env
+docker compose --env-file .env up -d mcp-gateway
 if grep -q '^CLOUDFLARED_TUNNEL_TOKEN=.\+' .env; then
   docker compose --env-file .env up -d cloudflared
   docker compose ps
