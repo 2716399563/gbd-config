@@ -1,5 +1,5 @@
 {
-  "name": "gbd-config cloud",
+  "name": "delegation-mode cloud",
   "install": "echo 'Cloud agent ready'",
   "repositoryDependencies": []
 }

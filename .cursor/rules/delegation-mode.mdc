@@ -25,9 +25,10 @@ alwaysApply: true
 ## 第二层：执行子代理（server-executor）
 
 - **模型**：`claude-fable-5-thinking-max`（通过 `.cursor/agents/server-executor.md` 固定）
-- **启动**：Task 工具委派 `server-executor`，或通过 MCP 编辑服务器文件
-- **文件路径**：MCP `server-files` → 服务器 `/workspace`（= `/opt/amd-radeon-register`）
+- **启动**：Task 工具委派 `server-executor`，或通过 MCP 编辑远程/本地文件
+- **工作区**：以当前打开的仓库根目录为准（Cursor 工作区路径；Cloud Agent 通常为 `/workspace`）
+- **远程编辑**（可选）：若配置了 MCP `server-files`，则通过该服务读写目标机器上的项目目录
 
 ## 核心原则
 
-**父代理只转发；server-executor 全权执行并通过 MCP 改服务器文件；Windows 用 sync.ps1 从 GitHub 拉取。**
+**父代理只转发；server-executor 全权执行；文件修改优先在当前工作区内完成，需要时通过 MCP 同步到远程；跨机器协作用 Git 拉取/推送（如 `scripts/windows/sync.ps1`）。**

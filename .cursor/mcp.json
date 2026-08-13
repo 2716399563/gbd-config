@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "server-files": {
-      "url": "https://20-255-73-137.sslip.io/mcp",
+      "url": "${MCP_SERVER_URL}",
       "headers": {
         "Authorization": "Bearer ${MCP_KEY}"
       }

@@ -1,4 +1,4 @@
-# Windows：从 GitHub 同步 gbd-config 到本机
+# Windows：从 GitHub 同步当前仓库到本机（在任意克隆目录下均可使用）
 # 用法: .\sync.ps1 [-Push] [-Branch main]
 
 param(
